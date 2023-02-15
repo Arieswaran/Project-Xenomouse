@@ -128,17 +128,7 @@ public class Player : Unit
 
     void EatCheese(Cheese cheese)
     {
-        Debug.Log($"ate {cheese.cheeseType}");
-        switch (cheese.cheeseType)
-        {
-            case Cheese.CheeseType.Red:
-                break;
-            case Cheese.CheeseType.Green:
-                break;
-            case Cheese.CheeseType.Blue:
-                break;
-        }
-
+        cheese.Consume();
         animator.SetTrigger("Eat");
         Destroy(cheese.gameObject);
     }
