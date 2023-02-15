@@ -24,19 +24,18 @@ public class RaisePhaseController : MonoBehaviour
     // Animation states "Playing" "Brushing" "Eating"
     public void TriggerPlaying(){
         _mouseAnimator.SetTrigger("Playing");
-        GameManager.instance.IncreaseMouseSpeed(1);
+        GameManager.instance.IncreasePlayedCount();
         DoCommonThingsAfterAction();
     }
 
     public void TriggerBrushing(){
         _mouseAnimator.SetTrigger("Brushing");
-        GameManager.instance.IncreaseMouseHealth(1);
+        GameManager.instance.IncreaseBrushedCount();
         DoCommonThingsAfterAction();
     }
 
     public void TriggerEating(){
         _mouseAnimator.SetTrigger("Eating");
-        GameManager.instance.IncreaseMouseHealth(1);
         DoCommonThingsAfterAction();
     }
 

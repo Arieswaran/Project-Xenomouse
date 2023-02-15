@@ -92,6 +92,14 @@ public class GameManager : MonoBehaviour
         playerData.green_cheese_count += amount;
     }
 
+    public void IncreasePlayedCount(){
+        mouseData.played_count++;
+    }
+
+    public void IncreaseBrushedCount(){
+        mouseData.brushed_count++;
+    }
+
     public void GenerateNextGenerationMouse(){ // Include stats from previous generation or use the number of collected cheese as a factor
         previousGenerationMice.Add(mouseData);
 

@@ -7,6 +7,7 @@ public class StatsPanelController : MonoBehaviour
     public TMPro.TextMeshProUGUI healthText;
     public TMPro.TextMeshProUGUI speedText;
     public TMPro.TextMeshProUGUI lifespanText;
+    public TMPro.TextMeshProUGUI actionsText;
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class StatsPanelController : MonoBehaviour
         healthText.text = "Health: " + mouseData.health;
         speedText.text = "Speed: " + mouseData.speed;
         lifespanText.text = "Lifespan: " + mouseData.lifespan;
+        actionsText.text = "Actions: " + mouseData.actions;
     }
 
     private void OnDestroy()
