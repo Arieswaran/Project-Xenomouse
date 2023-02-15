@@ -69,6 +69,7 @@ public class Player : Unit
         isDead = true;
         StopCoroutine(MouseLifeFading());
         animator.SetTrigger("Death");
+        GameManager.instance.GenerateNextGenerationMouse();
     }
 
     protected override void Awake()

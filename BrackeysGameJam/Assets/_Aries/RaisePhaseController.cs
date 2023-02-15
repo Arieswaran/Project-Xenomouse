@@ -36,14 +36,19 @@ public class RaisePhaseController : MonoBehaviour
 
     public void TriggerEating(){
         _mouseAnimator.SetTrigger("Eating");
+        GameManager.instance.DecreaseActions();
+        //need to decrease cheese count , but have to make support for multiple cheese types
         DoCommonThingsAfterAction();
     }
 
     private void DoCommonThingsAfterAction(){ 
         overlay.SetActive(true); // To prevent multiple animation triggers from overlapping
-        GameManager.instance.DecreaseActions();
         if(GameManager.instance.CanDoActions())
             Invoke("DisableOverlay", 1.6f); // Disable overlay after 1.5 seconds
+        else{
+            // Load Maze Scene
+            GameManager.instance.LoadMazeScene();
+        }
     }
 
     private void DisableOverlay(){

@@ -21,12 +21,15 @@ public class CheeseCounter : MonoBehaviour
         {
             case Cheese.CheeseType.Red:
                 redCheese++;
+                GameManager.instance.IncreaseRedCheese();
                 break;
             case Cheese.CheeseType.Green:
                 greenCheese++;
+                GameManager.instance.IncreaseGreenCheese();
                 break;
             case Cheese.CheeseType.Blue:
                 blueCheese++;
+                GameManager.instance.IncreaseBlueCheese();
                 break;
         }
 

@@ -31,7 +31,7 @@ public class ActionPanelController : MonoBehaviour
         FeedCheeseButton.onClick.RemoveAllListeners();
         FeedCheeseButton.onClick.AddListener(() => {
             raisePhaseController.TriggerEating();
-            GameManager.instance.IncreaseMouseHealth(2);
+            GameManager.instance.IncreaseMouseHealth(10);
             ToggleFeedOptions();
         });
         FeedPelletButton.onClick.RemoveAllListeners();
@@ -56,6 +56,15 @@ public class ActionPanelController : MonoBehaviour
         }
         foreach(GameObject option in normalOptions){
             option.SetActive(!option.activeSelf);
+        }
+        CheckCheeseAvailability();
+    }
+
+    private void CheckCheeseAvailability(){
+        if(GameManager.instance.GetPlayerData().red_cheese_count == 0 && GameManager.instance.GetPlayerData().blue_cheese_count == 0 && GameManager.instance.GetPlayerData().green_cheese_count == 0){
+            FeedCheeseButton.interactable = false;
+        }else{
+            FeedCheeseButton.interactable = true;
         }
     }
 }
