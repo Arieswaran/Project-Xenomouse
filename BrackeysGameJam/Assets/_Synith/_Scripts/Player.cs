@@ -22,6 +22,7 @@ public class Player : Unit
     PlayerInputActions playerInputActions;
     MouseStats mouseStats;
     float startingMoveSpeed;
+    int startingLifeSpan;
     bool isDead;
 
 
@@ -43,6 +44,7 @@ public class Player : Unit
     {
         maxHealth = mouseStats.Health;
         moveSpeed = startingMoveSpeed + mouseStats.Speed * 0.1f;
+        startingLifeSpan = mouseStats.LifeSpan;
     }
 
     IEnumerator MouseLifeFading()
@@ -66,10 +68,7 @@ public class Player : Unit
     {
         isDead = true;
         StopCoroutine(MouseLifeFading());
-        Debug.Log("BARARLGHGHGHH!!! IM DEAD");
-        // TODO: PLAY DEATH ANIMATION
-        //animator.SetTrigger("Death");
-        animator.Play("Death");
+        animator.SetTrigger("Death");
     }
 
     protected override void Awake()
