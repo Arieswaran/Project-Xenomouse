@@ -10,13 +10,13 @@ namespace Synith
         [SerializeField] List<Transform> patrolTransformList;
         [SerializeField, Range(3f, 30f)] float detectionRadius;
         [SerializeField] LayerMask detectionLayer;
-        [SerializeField] float attackCooldownTimerMax = 2f;
+        [SerializeField] float attackCooldownTimerMax;
 
         float attackCooldownTimer;
         float minDistance = 1f;
         float attackRange = 3f;
 
-        bool isAttacking;
+        public bool isAttacking;
 
         Player player;
 
@@ -44,8 +44,6 @@ namespace Synith
 
         protected override Vector3 CalculateMoveDirection()
         {
-            AttackCooldown();
-
             if (isAttacking) return Vector3.zero;
 
             Vector3 nextWaypoint = patrolTransformList[patrolIndex].position;
@@ -65,7 +63,6 @@ namespace Synith
             {
                 Debug.Log("Attacking Player!");
                 Attack();
-                player.TakeDamage();
                 return Vector3.zero;
             }
 
@@ -98,26 +95,20 @@ namespace Synith
             isAttacking = true;
             attackCooldownTimer = attackCooldownTimerMax;
 
-            Player player = playerTransform.gameObject.GetComponent<Player>();
             player.TakeDamage();
+            targetTransform = patrolTransformList[patrolIndex];
+
+            StartCoroutine(AttackCooldown2());
         }
 
-        void AttackCooldown()
+        IEnumerator AttackCooldown2()
         {
-            if (!isAttacking) return;
+            yield return new WaitForSeconds(attackCooldownTimerMax);
 
-            attackCooldownTimer -= Time.deltaTime;
+            isAttacking = false;
+            attackCooldownTimer = attackCooldownTimerMax;
+            Debug.Log($"ATTACK COOLDOWN {attackCooldownTimer}");
 
-            if (attackCooldownTimer < 0)
-            {
-                Debug.Log("attack cooled down");
-                isAttacking = false;
-                attackCooldownTimer += attackCooldownTimerMax;
-            }
-        }
-        private void OnTriggerEnter(Collider other)
-        {
-            
         }
     }
 }

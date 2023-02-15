@@ -57,7 +57,7 @@ public class Player : Unit
 
             mouseStats.LifeSpan--;
 
-            Debug.Log(mouseStats.LifeSpan);
+            //Debug.Log(mouseStats.LifeSpan);
 
             if (mouseStats.LifeSpan <= 0)
             {
@@ -139,16 +139,20 @@ public class Player : Unit
 
     public void TakeDamage()
     {
+        if (isDead) return;
+
         mouseStats.Health--;
 
-        if (mouseStats.Health > 0)
+        Debug.Log("Health Remaining:" + mouseStats.Health);
+
+        if (mouseStats.Health <= 0)
         {
-            Debug.Log("Ouch!");
-            animator.SetTrigger("Hurt");
+            Die();
         }
         else
         {
-            Die();
+            Debug.Log("Ouch!");
+            animator.SetTrigger("Hurt");
         }
         
     }
