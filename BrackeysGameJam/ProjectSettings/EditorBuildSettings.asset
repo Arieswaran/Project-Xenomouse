@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Synith_MazePhase_Scene.unity
+    path: Assets/Scenes/MazePhaseScene.unity
     guid: 6f68cf420ff0c9348b6e034853630651
   m_configObjects: {}
