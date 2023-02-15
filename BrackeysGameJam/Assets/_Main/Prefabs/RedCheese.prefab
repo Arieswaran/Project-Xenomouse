@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 2787298779089414358, guid: d6cc2d92382669547ab2c21dbbd30363,
         type: 3}
       propertyPath: cheeseType
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2787298779089414360, guid: d6cc2d92382669547ab2c21dbbd30363,
         type: 3}

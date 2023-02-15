@@ -4,7 +4,8 @@ public static class GameSceneManager
 {
     public enum Scene
     {
-        Synith_MazePhase_Scene,
+        RaisePhaseScene,
+        MazePhaseScene,
     }
 
     public static void Load(Scene scene)

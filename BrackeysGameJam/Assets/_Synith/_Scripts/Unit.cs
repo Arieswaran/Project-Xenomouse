@@ -18,10 +18,7 @@ public abstract class Unit : MonoBehaviour
 
     void FixedUpdate()
     {
-
-
         //rb.ResetInertiaTensor();
-
         HandleMovement();
         HandleAnimation();
     }
@@ -37,8 +34,6 @@ public abstract class Unit : MonoBehaviour
             animator.SetBool("IsWalking", false);
         }
     }
-
-
 
     void HandleMovement()
     {
