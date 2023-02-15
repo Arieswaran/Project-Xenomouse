@@ -42,9 +42,9 @@ public class RaisePhaseController : MonoBehaviour
 
     private void DoCommonThingsAfterAction(){ 
         overlay.SetActive(true); // To prevent multiple animation triggers from overlapping
-        GameManager.instance.IncreaseMouseLifespan(-1); // cause I am considering the lifespan as the number of actions the mouse can do
+        GameManager.instance.DecreaseActions();
         if(GameManager.instance.CanDoActions())
-            Invoke("DisableOverlay", 1.5f); // Disable overlay after 1.5 seconds
+            Invoke("DisableOverlay", 1.6f); // Disable overlay after 1.5 seconds
     }
 
     private void DisableOverlay(){
