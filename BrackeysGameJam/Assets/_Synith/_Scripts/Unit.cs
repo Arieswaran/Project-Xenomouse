@@ -18,8 +18,6 @@ public abstract class Unit : MonoBehaviour
 
     void FixedUpdate()
     {
-
-
         //rb.ResetInertiaTensor();
 
         HandleMovement();

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,6 +26,7 @@ public class Player : Unit
     int startingLifeSpan;
     bool isDead;
 
+    public static event Action OnMouseDeath;
 
     public void SetStats(int health, int speed, int lifeSpanSeconds)
     {
@@ -69,6 +71,8 @@ public class Player : Unit
         isDead = true;
         StopCoroutine(MouseLifeFading());
         animator.SetTrigger("Death");
+
+        OnMouseDeath?.Invoke();
     }
 
     protected override void Awake()
@@ -135,7 +139,17 @@ public class Player : Unit
 
     public void TakeDamage()
     {
-        Debug.Log("Ouch!");
-        animator.SetTrigger("Hurt");
+        mouseStats.Health--;
+
+        if (mouseStats.Health > 0)
+        {
+            Debug.Log("Ouch!");
+            animator.SetTrigger("Hurt");
+        }
+        else
+        {
+            Die();
+        }
+        
     }
 }

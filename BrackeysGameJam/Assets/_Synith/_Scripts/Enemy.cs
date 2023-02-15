@@ -18,6 +18,8 @@ namespace Synith
 
         bool isAttacking;
 
+        Player player;
+
         Transform targetTransform;
         Transform playerTransform;
         int patrolIndex = 0;
@@ -28,8 +30,9 @@ namespace Synith
 
             targetTransform = patrolTransformList[patrolIndex];
 
-            playerTransform = FindObjectOfType<Player>().transform;
-            Debug.Log($"Found Player: {playerTransform.name}");
+            player = FindObjectOfType<Player>();
+            playerTransform = player.transform;
+            Debug.Log($"Found Player: {player.name}");
         }
 
 
@@ -62,7 +65,7 @@ namespace Synith
             {
                 Debug.Log("Attacking Player!");
                 Attack();
-                // TODO: REMOVE HEALTH FROM PLAYER
+                player.TakeDamage();
                 return Vector3.zero;
             }
 
@@ -111,6 +114,10 @@ namespace Synith
                 isAttacking = false;
                 attackCooldownTimer += attackCooldownTimerMax;
             }
+        }
+        private void OnTriggerEnter(Collider other)
+        {
+            
         }
     }
 }
