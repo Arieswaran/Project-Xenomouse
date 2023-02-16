@@ -13,6 +13,11 @@ public class CheeseCounter : MonoBehaviour
         Cheese.OnAnyCheeseConsumed += Cheese_OnAnyCheeseConsumed;
     }
 
+    private void OnDestroy()
+    {
+        Cheese.OnAnyCheeseConsumed -= Cheese_OnAnyCheeseConsumed;
+    }
+
     void Cheese_OnAnyCheeseConsumed(object sender, System.EventArgs e)
     {
         Cheese cheese = sender as Cheese;
