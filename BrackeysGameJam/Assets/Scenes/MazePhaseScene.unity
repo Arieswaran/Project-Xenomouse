@@ -129,7 +129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45708
+  m_Name: pb_Mesh42556
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -351,6 +351,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 9c7cfb9cb5dac5542935d70f4344136f,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 9c7cfb9cb5dac5542935d70f4344136f,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -363,6 +368,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring3W4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9c7cfb9cb5dac5542935d70f4344136f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c7cfb9cb5dac5542935d70f4344136f, type: 3}
@@ -657,13 +667,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &17848617
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17848613}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1078259586}
 --- !u!43 &25405746
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45298
+  m_Name: pb_Mesh42582
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -885,6 +909,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: e2792cf20cf09d641a648f7d29d27057,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: e2792cf20cf09d641a648f7d29d27057,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -897,6 +926,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Exit2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e2792cf20cf09d641a648f7d29d27057,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2792cf20cf09d641a648f7d29d27057, type: 3}
@@ -1191,13 +1225,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &36130175
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36130171}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 139673783}
 --- !u!43 &48192387
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45538
+  m_Name: pb_Mesh42298
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1429,6 +1477,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 36fd0d85a246b544a9c652b57e934f48,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 36fd0d85a246b544a9c652b57e934f48,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -1441,6 +1494,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring5W6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 36fd0d85a246b544a9c652b57e934f48,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36fd0d85a246b544a9c652b57e934f48, type: 3}
@@ -1735,13 +1793,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &61116834
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61116830}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1385341231}
 --- !u!43 &74862321
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45228
+  m_Name: pb_Mesh42422
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1905,7 +1977,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45658
+  m_Name: pb_Mesh42966
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2137,6 +2209,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c4ddddf681a16eb4ba14cabe1e768463,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: c4ddddf681a16eb4ba14cabe1e768463,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -2149,6 +2226,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring2W2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c4ddddf681a16eb4ba14cabe1e768463,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4ddddf681a16eb4ba14cabe1e768463, type: 3}
@@ -2443,13 +2525,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &104033914
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104033910}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1566433562}
 --- !u!43 &139673783
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-44988
+  m_Name: pb_Mesh42156
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2613,7 +2709,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45338
+  m_Name: pb_Mesh42868
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2835,6 +2931,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: cc422a9180eaa4542b38c277953852de,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: cc422a9180eaa4542b38c277953852de,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -2847,6 +2948,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring64
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cc422a9180eaa4542b38c277953852de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc422a9180eaa4542b38c277953852de, type: 3}
@@ -3141,13 +3247,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &148982982
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148982978}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1456632519}
 --- !u!43 &152482355
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45058
+  m_Name: pb_Mesh42974
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3311,7 +3431,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45398
+  m_Name: pb_Mesh42308
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3533,6 +3653,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 270ca53d7b9184c488d2bc177877db91,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 270ca53d7b9184c488d2bc177877db91,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -3545,6 +3670,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring5W2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 270ca53d7b9184c488d2bc177877db91,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 270ca53d7b9184c488d2bc177877db91, type: 3}
@@ -3866,13 +3996,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &165713913
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165713909}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 447225001}
 --- !u!43 &171165584
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45668
+  m_Name: pb_Mesh42916
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4036,7 +4180,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45458
+  m_Name: pb_Mesh42390
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4258,6 +4402,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 3497427e3cd44d4489d4c2b8282f6a96,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 3497427e3cd44d4489d4c2b8282f6a96,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -4270,6 +4419,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring4W4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3497427e3cd44d4489d4c2b8282f6a96,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3497427e3cd44d4489d4c2b8282f6a96, type: 3}
@@ -4622,6 +4776,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &190168217
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190168213}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1126591909}
 --- !u!1001 &202677179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4686,6 +4854,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 5721d06b5d789454f8e1074e2165df50,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 5721d06b5d789454f8e1074e2165df50,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -4698,6 +4871,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring2W3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5721d06b5d789454f8e1074e2165df50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5721d06b5d789454f8e1074e2165df50, type: 3}
@@ -4933,6 +5111,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &202677185
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202677181}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1171358049}
 --- !u!1001 &217333901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4997,6 +5189,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: e42ed6b0a85ab70459ac5fcd68bec17b,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: e42ed6b0a85ab70459ac5fcd68bec17b,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -5009,6 +5206,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring2W5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e42ed6b0a85ab70459ac5fcd68bec17b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e42ed6b0a85ab70459ac5fcd68bec17b, type: 3}
@@ -5728,13 +5930,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &217333907
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217333903}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1064445459}
 --- !u!43 &220148761
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45368
+  m_Name: pb_Mesh42688
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6080,7 +6296,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45418
+  m_Name: pb_Mesh42502
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6244,7 +6460,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45078
+  m_Name: pb_Mesh42374
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6466,6 +6682,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: f1d38bc0c53ff224dbc51c12a19fe666,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: f1d38bc0c53ff224dbc51c12a19fe666,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -6478,6 +6699,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring66
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f1d38bc0c53ff224dbc51c12a19fe666,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1d38bc0c53ff224dbc51c12a19fe666, type: 3}
@@ -7138,13 +7364,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &293713442
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293713438}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1664404171}
 --- !u!43 &344006462
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45008
+  m_Name: pb_Mesh42618
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7308,7 +7548,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45688
+  m_Name: pb_Mesh42850
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7530,6 +7770,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: ef7369b79b533d141aeb0f381110695c,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: ef7369b79b533d141aeb0f381110695c,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -7542,6 +7787,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring72
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ef7369b79b533d141aeb0f381110695c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef7369b79b533d141aeb0f381110695c, type: 3}
@@ -8320,6 +8570,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &360927396
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360927392}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1931106508}
 --- !u!1001 &377033449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8384,6 +8648,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 91c45ae8338dec54a8257c81658e9e9f,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 91c45ae8338dec54a8257c81658e9e9f,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -8396,6 +8665,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring56
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 91c45ae8338dec54a8257c81658e9e9f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c45ae8338dec54a8257c81658e9e9f, type: 3}
@@ -8631,13 +8905,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &377033455
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377033451}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1212950974}
 --- !u!43 &391131888
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45168
+  m_Name: pb_Mesh42764
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8801,7 +9089,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45618
+  m_Name: pb_Mesh42708
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9023,6 +9311,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 05dc7c49cee0a7a49b0418c2c9f63975,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 05dc7c49cee0a7a49b0418c2c9f63975,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -9035,6 +9328,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring32
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 05dc7c49cee0a7a49b0418c2c9f63975,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05dc7c49cee0a7a49b0418c2c9f63975, type: 3}
@@ -9332,6 +9630,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &420746430
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420746426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1499952648}
 --- !u!1001 &429603713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9396,6 +9708,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 6c9d4dd89f4e79c408f77341d999afd0,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 6c9d4dd89f4e79c408f77341d999afd0,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -9408,6 +9725,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring52
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6c9d4dd89f4e79c408f77341d999afd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c9d4dd89f4e79c408f77341d999afd0, type: 3}
@@ -9705,13 +10027,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &429603719
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429603715}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 48192387}
 --- !u!43 &447225001
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45248
+  m_Name: pb_Mesh42202
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9933,6 +10269,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 73251ed541882a64bae8b953a848dac6,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 73251ed541882a64bae8b953a848dac6,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -9945,6 +10286,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring22
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 73251ed541882a64bae8b953a848dac6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73251ed541882a64bae8b953a848dac6, type: 3}
@@ -10301,6 +10647,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &454149071
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454149067}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 156572379}
 --- !u!1001 &468431201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10375,6 +10735,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 58403b5edf894224ea7969a2fa06f232,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 58403b5edf894224ea7969a2fa06f232,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -10387,6 +10752,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring3W2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 58403b5edf894224ea7969a2fa06f232,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58403b5edf894224ea7969a2fa06f232, type: 3}
@@ -10622,13 +10992,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &468431207
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468431203}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1756887582}
 --- !u!43 &475963694
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45588
+  m_Name: pb_Mesh42328
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10792,7 +11176,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45178
+  m_Name: pb_Mesh42678
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11014,6 +11398,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: e5401bcea9487bb4cb722cd66287376f,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: e5401bcea9487bb4cb722cd66287376f,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -11026,6 +11415,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring57
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5401bcea9487bb4cb722cd66287376f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5401bcea9487bb4cb722cd66287376f, type: 3}
@@ -11261,13 +11655,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &485780879
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485780875}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 475963694}
 --- !u!43 &491932871
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45698
+  m_Name: pb_Mesh42728
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11489,6 +11897,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 95c2cca4ef32cb04aab5aa616f5c36ee,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 95c2cca4ef32cb04aab5aa616f5c36ee,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -11501,6 +11914,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring65
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95c2cca4ef32cb04aab5aa616f5c36ee,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95c2cca4ef32cb04aab5aa616f5c36ee, type: 3}
@@ -11736,6 +12154,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &503911192
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503911188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1112093273}
 --- !u!1001 &510768587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11800,6 +12232,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c989e3762fb9c27499ea2497bd2f9013,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: c989e3762fb9c27499ea2497bd2f9013,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -11812,6 +12249,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring61
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c989e3762fb9c27499ea2497bd2f9013,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c989e3762fb9c27499ea2497bd2f9013, type: 3}
@@ -12227,13 +12669,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &510768593
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510768589}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1499440264}
 --- !u!43 &529901299
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45148
+  m_Name: pb_Mesh42534
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12455,6 +12911,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: f2c811ebc4d070946af2bafca24bc977,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: f2c811ebc4d070946af2bafca24bc977,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -12467,6 +12928,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring43
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f2c811ebc4d070946af2bafca24bc977,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2c811ebc4d070946af2bafca24bc977, type: 3}
@@ -12764,13 +13230,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &545821713
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545821709}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1786816153}
 --- !u!43 &558190276
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45208
+  m_Name: pb_Mesh42956
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12992,6 +13472,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 3c078db8a1106384aa644fbe28309ffc,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 3c078db8a1106384aa644fbe28309ffc,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -13004,6 +13489,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring21
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c078db8a1106384aa644fbe28309ffc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c078db8a1106384aa644fbe28309ffc, type: 3}
@@ -13785,6 +14275,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &560568835
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560568831}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1510225437}
 --- !u!1001 &568682756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13849,6 +14353,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 9882e2b6faffca344971969e4e056f37,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 9882e2b6faffca344971969e4e056f37,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -13861,6 +14370,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring2W6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9882e2b6faffca344971969e4e056f37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9882e2b6faffca344971969e4e056f37, type: 3}
@@ -14155,6 +14669,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &568682762
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568682758}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 271647917}
 --- !u!1001 &580498166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14219,6 +14747,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: b569f676c7f53364eb5e721e638f04af,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: b569f676c7f53364eb5e721e638f04af,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -14231,6 +14764,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring23
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b569f676c7f53364eb5e721e638f04af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b569f676c7f53364eb5e721e638f04af, type: 3}
@@ -14587,6 +15125,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &580498172
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580498168}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1809901209}
 --- !u!1001 &617374460
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14651,6 +15203,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: f9c36b1760736d747a67f1637a48a98d,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: f9c36b1760736d747a67f1637a48a98d,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -14663,6 +15220,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring42
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9c36b1760736d747a67f1637a48a98d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9c36b1760736d747a67f1637a48a98d, type: 3}
@@ -15199,6 +15761,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &617374466
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617374462}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 179671373}
 --- !u!1001 &642413838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15263,6 +15839,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: e42ed6b0a85ab70459ac5fcd68bec17b,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: e42ed6b0a85ab70459ac5fcd68bec17b,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -15275,6 +15856,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring2W5
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e42ed6b0a85ab70459ac5fcd68bec17b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e42ed6b0a85ab70459ac5fcd68bec17b, type: 3}
@@ -15994,6 +16580,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &642413844
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642413840}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1898560557}
 --- !u!1001 &643016253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16068,6 +16668,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 98fa6322e6bd14142a0fb9e19a712e2e,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 98fa6322e6bd14142a0fb9e19a712e2e,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -16080,6 +16685,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring6W2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 98fa6322e6bd14142a0fb9e19a712e2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98fa6322e6bd14142a0fb9e19a712e2e, type: 3}
@@ -16374,6 +16984,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &643016259
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643016255}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 998906290}
 --- !u!1 &643167232
 GameObject:
   m_ObjectHideFlags: 0
@@ -16383,7 +17007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 643167233}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Maze
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16487,7 +17111,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-44998
+  m_Name: pb_Mesh42716
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16651,7 +17275,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45478
+  m_Name: pb_Mesh42814
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16873,6 +17497,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 74cfbf3c05e488d46a382964397c154b,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 74cfbf3c05e488d46a382964397c154b,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -16885,6 +17514,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring4W7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 74cfbf3c05e488d46a382964397c154b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74cfbf3c05e488d46a382964397c154b, type: 3}
@@ -17179,6 +17813,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &690804033
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690804029}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 74862321}
 --- !u!1001 &690899687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17253,6 +17901,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: e03370778f43bab4e853268f104175ce,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: e03370778f43bab4e853268f104175ce,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -17265,6 +17918,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring6W5
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e03370778f43bab4e853268f104175ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03370778f43bab4e853268f104175ce, type: 3}
@@ -17500,13 +18158,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &690899693
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690899689}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1475484663}
 --- !u!43 &737642138
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45548
+  m_Name: pb_Mesh42592
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17670,7 +18342,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45358
+  m_Name: pb_Mesh42572
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17902,6 +18574,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: a113b9eb97b2e6c46b639a6b0008a728,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: a113b9eb97b2e6c46b639a6b0008a728,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -17914,6 +18591,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring5W3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a113b9eb97b2e6c46b639a6b0008a728,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a113b9eb97b2e6c46b639a6b0008a728, type: 3}
@@ -18208,6 +18890,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &779078617
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779078613}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1567905265}
 --- !u!1 &783825830
 GameObject:
   m_ObjectHideFlags: 0
@@ -18361,6 +19057,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: fee7b15faa3782947a0fa08c1c9d21bd,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: fee7b15faa3782947a0fa08c1c9d21bd,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -18373,6 +19074,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring46
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fee7b15faa3782947a0fa08c1c9d21bd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fee7b15faa3782947a0fa08c1c9d21bd, type: 3}
@@ -18608,6 +19314,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &810980058
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810980054}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 896182267}
 --- !u!1 &862291221
 GameObject:
   m_ObjectHideFlags: 0
@@ -18767,7 +19487,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45498
+  m_Name: pb_Mesh42458
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18931,7 +19651,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45428
+  m_Name: pb_Mesh43028
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19095,7 +19815,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45718
+  m_Name: pb_Mesh42650
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19327,6 +20047,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 972e97031e79b3343910e801ae28b1d7,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 972e97031e79b3343910e801ae28b1d7,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -19339,6 +20064,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring5W5
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 972e97031e79b3343910e801ae28b1d7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 972e97031e79b3343910e801ae28b1d7, type: 3}
@@ -19633,6 +20363,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &956149153
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956149149}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 968783174}
 --- !u!1001 &963074617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19707,6 +20451,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 6e5f5eda180971148806d59d2f1cf813,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 6e5f5eda180971148806d59d2f1cf813,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -19719,6 +20468,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring3W3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e5f5eda180971148806d59d2f1cf813,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e5f5eda180971148806d59d2f1cf813, type: 3}
@@ -20013,13 +20767,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &963074623
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963074619}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1444250312}
 --- !u!43 &968783174
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45278
+  m_Name: pb_Mesh42484
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20241,6 +21009,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 59b9632b463a3f444bb98e24f11ec4b6,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 59b9632b463a3f444bb98e24f11ec4b6,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -20253,6 +21026,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring24
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 59b9632b463a3f444bb98e24f11ec4b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59b9632b463a3f444bb98e24f11ec4b6, type: 3}
@@ -21276,13 +22054,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &977577358
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977577354}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 270890912}
 --- !u!43 &998906290
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45318
+  m_Name: pb_Mesh42406
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21513,7 +22305,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45098
+  m_Name: pb_Mesh42840
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21735,6 +22527,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 2cc9c2bfc82ea8940acb5874953f0529,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 2cc9c2bfc82ea8940acb5874953f0529,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -21747,6 +22544,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring7W2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2cc9c2bfc82ea8940acb5874953f0529,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cc9c2bfc82ea8940acb5874953f0529, type: 3}
@@ -21982,13 +22784,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1042153667
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042153663}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1629995658}
 --- !u!43 &1064445459
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-203720
+  m_Name: pb_Mesh42230
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22152,7 +22968,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45138
+  m_Name: pb_Mesh42146
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22374,6 +23190,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: cb051153947c1cb40873ed4d4c864899,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: cb051153947c1cb40873ed4d4c864899,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -22386,6 +23207,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring3W5
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cb051153947c1cb40873ed4d4c864899,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb051153947c1cb40873ed4d4c864899, type: 3}
@@ -22680,13 +23506,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1085768089
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085768085}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 529901299}
 --- !u!43 &1101180622
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45268
+  m_Name: pb_Mesh42610
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22899,7 +23739,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45558
+  m_Name: pb_Mesh42986
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23063,7 +23903,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45638
+  m_Name: pb_Mesh42338
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23227,7 +24067,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45198
+  m_Name: pb_Mesh42214
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23449,6 +24289,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 64ff19edf8d423c4aabb9b2b460e8faf,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 64ff19edf8d423c4aabb9b2b460e8faf,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -23461,6 +24306,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring82
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 64ff19edf8d423c4aabb9b2b460e8faf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64ff19edf8d423c4aabb9b2b460e8faf, type: 3}
@@ -24000,6 +24850,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1130833447
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130833443}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 14627326}
 --- !u!1001 &1142891983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24064,6 +24928,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 68775d0ae7ea6ad40b4d7b830fc6a5eb,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 68775d0ae7ea6ad40b4d7b830fc6a5eb,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -24076,6 +24945,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring4W3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68775d0ae7ea6ad40b4d7b830fc6a5eb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68775d0ae7ea6ad40b4d7b830fc6a5eb, type: 3}
@@ -24311,6 +25185,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1142891989
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142891985}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1972478710}
 --- !u!1001 &1147504103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24375,6 +25263,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: b86b498d8c3d8b74393a70c4f1cc6f40,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: b86b498d8c3d8b74393a70c4f1cc6f40,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -24387,6 +25280,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring6W6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b86b498d8c3d8b74393a70c4f1cc6f40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b86b498d8c3d8b74393a70c4f1cc6f40, type: 3}
@@ -24622,13 +25520,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1147504109
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147504105}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 750609571}
 --- !u!43 &1171358049
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45048
+  m_Name: pb_Mesh42222
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24850,6 +25762,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: b9e4de707094f4342b6661d5cdbfb59a,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: b9e4de707094f4342b6661d5cdbfb59a,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -24862,6 +25779,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring5W7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b9e4de707094f4342b6661d5cdbfb59a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9e4de707094f4342b6661d5cdbfb59a, type: 3}
@@ -25156,13 +26078,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1196703077
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196703073}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 25405746}
 --- !u!43 &1199665481
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45088
+  m_Name: pb_Mesh42876
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25384,6 +26320,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: d59aef5c9931a3a4797416d26b9cb411,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: d59aef5c9931a3a4797416d26b9cb411,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -25396,6 +26337,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring53
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d59aef5c9931a3a4797416d26b9cb411,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d59aef5c9931a3a4797416d26b9cb411, type: 3}
@@ -26115,13 +27061,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1202427853
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202427849}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 737642138}
 --- !u!43 &1203081006
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-44978
+  m_Name: pb_Mesh42628
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26343,6 +27303,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 9e61e31cbb793164e951d1890c48364d,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 9e61e31cbb793164e951d1890c48364d,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -26355,6 +27320,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring62
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9e61e31cbb793164e951d1890c48364d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e61e31cbb793164e951d1890c48364d, type: 3}
@@ -26894,6 +27864,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1211543138
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211543134}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1385140090}
 --- !u!1001 &1211607375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26968,6 +27952,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: f8276d310d70b294d83e33b2d4568529,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: f8276d310d70b294d83e33b2d4568529,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -26980,6 +27969,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring5W4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f8276d310d70b294d83e33b2d4568529,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8276d310d70b294d83e33b2d4568529, type: 3}
@@ -27215,6 +28209,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1211607381
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211607377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1101180622}
 --- !u!1001 &1212479616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27289,6 +28297,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 5015dee1aaedd754cbade069d23fac74,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 5015dee1aaedd754cbade069d23fac74,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -27301,6 +28314,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring1W1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5015dee1aaedd754cbade069d23fac74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5015dee1aaedd754cbade069d23fac74, type: 3}
@@ -27778,13 +28796,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1212479622
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212479618}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 344006462}
 --- !u!43 &1212950974
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45578
+  m_Name: pb_Mesh42278
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28006,6 +29038,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 6efdf7d30e924d44885dd74fc7853e07,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 6efdf7d30e924d44885dd74fc7853e07,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -28018,6 +29055,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Exit1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6efdf7d30e924d44885dd74fc7853e07,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6efdf7d30e924d44885dd74fc7853e07, type: 3}
@@ -28312,13 +29354,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1228572005
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228572001}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1203081006}
 --- !u!43 &1247165696
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45448
+  m_Name: pb_Mesh42888
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29767,6 +30823,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 96c54696dea4bd247b37514646083640,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 96c54696dea4bd247b37514646083640,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -29779,6 +30840,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring83
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 96c54696dea4bd247b37514646083640,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96c54696dea4bd247b37514646083640, type: 3}
@@ -30315,13 +31381,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1285022961
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285022957}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 942407431}
 --- !u!43 &1301413513
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45508
+  m_Name: pb_Mesh42928
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30543,6 +31623,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 989e1ed2a56418a4eb27f67532edacc4,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 989e1ed2a56418a4eb27f67532edacc4,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -30555,6 +31640,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring45
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 989e1ed2a56418a4eb27f67532edacc4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 989e1ed2a56418a4eb27f67532edacc4, type: 3}
@@ -30970,6 +32060,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1313873815
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313873811}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1494431237}
 --- !u!1001 &1324439737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31034,6 +32138,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 13a6496f6be141b4d8f6017cda87390f,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 13a6496f6be141b4d8f6017cda87390f,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -31046,6 +32155,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring6W3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13a6496f6be141b4d8f6017cda87390f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13a6496f6be141b4d8f6017cda87390f, type: 3}
@@ -31340,13 +32454,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1324439743
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324439739}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2086007527}
 --- !u!43 &1355254353
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45528
+  m_Name: pb_Mesh42938
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31568,6 +32696,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 32e89a141c7a2e94abd2ec65ec2f1231,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 32e89a141c7a2e94abd2ec65ec2f1231,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -31580,6 +32713,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring4W2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32e89a141c7a2e94abd2ec65ec2f1231,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32e89a141c7a2e94abd2ec65ec2f1231, type: 3}
@@ -31815,13 +32953,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1355949702
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355949698}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 484998343}
 --- !u!43 &1358319359
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45238
+  m_Name: pb_Mesh42772
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -32053,6 +33205,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: d24435fdb210b1d43a4e0690184b9f73,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: d24435fdb210b1d43a4e0690184b9f73,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -32065,6 +33222,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring7W1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d24435fdb210b1d43a4e0690184b9f73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d24435fdb210b1d43a4e0690184b9f73, type: 3}
@@ -32359,13 +33521,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1367284624
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367284620}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 220148761}
 --- !u!43 &1385140090
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45608
+  m_Name: pb_Mesh42602
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -32529,7 +33705,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45288
+  m_Name: pb_Mesh42166
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -32839,6 +34015,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 6d7ad52c9f8e47342b184cf47c899b3d,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 6d7ad52c9f8e47342b184cf47c899b3d,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -32851,6 +34032,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring63
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6d7ad52c9f8e47342b184cf47c899b3d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d7ad52c9f8e47342b184cf47c899b3d, type: 3}
@@ -33269,6 +34455,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1411105691
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411105687}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 396918230}
 --- !u!1001 &1436118834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33343,6 +34543,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 706059448e404c84d8434a44592accef,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 706059448e404c84d8434a44592accef,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -33355,6 +34560,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 706059448e404c84d8434a44592accef,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 706059448e404c84d8434a44592accef, type: 3}
@@ -39287,13 +40497,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1436118840
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436118836}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 644249989}
 --- !u!43 &1444250312
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45128
+  m_Name: pb_Mesh42492
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39584,6 +40808,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: d7f070c1e419ad4438933a865b3b6655,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: d7f070c1e419ad4438933a865b3b6655,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -39596,6 +40825,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring81
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d7f070c1e419ad4438933a865b3b6655,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f070c1e419ad4438933a865b3b6655, type: 3}
@@ -39952,13 +41186,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1453950760
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453950756}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 491932871}
 --- !u!43 &1456632519
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45628
+  m_Name: pb_Mesh42190
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40158,7 +41406,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45348
+  m_Name: pb_Mesh42430
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40437,7 +41685,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45488
+  m_Name: pb_Mesh42660
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40601,7 +41849,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45598
+  m_Name: pb_Mesh42346
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40765,7 +42013,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45438
+  m_Name: pb_Mesh42290
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40929,7 +42177,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45388
+  m_Name: pb_Mesh42366
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -41093,7 +42341,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45108
+  m_Name: pb_Mesh42858
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -41257,7 +42505,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45518
+  m_Name: pb_Mesh42898
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -41489,6 +42737,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 948128742ebff9e4cac670d31f3266dc,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 948128742ebff9e4cac670d31f3266dc,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -41501,6 +42754,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring4W1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 948128742ebff9e4cac670d31f3266dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 948128742ebff9e4cac670d31f3266dc, type: 3}
@@ -41736,6 +42994,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1538030698
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538030694}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 391131888}
 --- !u!1001 &1545888289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41810,6 +43082,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 720355c66f0a2424faed692bf1e9393f,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 720355c66f0a2424faed692bf1e9393f,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -41822,6 +43099,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring5W1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 720355c66f0a2424faed692bf1e9393f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 720355c66f0a2424faed692bf1e9393f, type: 3}
@@ -42116,6 +43398,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1545888295
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545888291}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1358319359}
 --- !u!1 &1555020195
 GameObject:
   m_ObjectHideFlags: 0
@@ -42225,7 +43521,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45018
+  m_Name: pb_Mesh42822
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -42389,7 +43685,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45038
+  m_Name: pb_Mesh42178
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -42553,7 +43849,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45258
+  m_Name: pb_Mesh42442
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -42809,89 +44105,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
---- !u!1 &1585754055
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1585754056}
-  - component: {fileID: 1585754058}
-  - component: {fileID: 1585754057}
-  m_Layer: 0
-  m_Name: Sphere
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1585754056
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1585754055}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.31, y: 2.31, z: 2.31}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1760651748}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1585754057
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1585754055}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a911934bb4abec4448c6765f192d54ba, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1585754058
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1585754055}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1608881555
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42956,6 +44169,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 9491249b77e6a464eb0faf74857ce622,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 9491249b77e6a464eb0faf74857ce622,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -42968,6 +44186,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring44
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9491249b77e6a464eb0faf74857ce622,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9491249b77e6a464eb0faf74857ce622, type: 3}
@@ -43507,6 +44730,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1608881561
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608881557}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 682057906}
 --- !u!1001 &1621454444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43581,6 +44818,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 1f4367e1842fe694c834d33b71efedff,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 1f4367e1842fe694c834d33b71efedff,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -43593,6 +44835,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring1W2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f4367e1842fe694c834d33b71efedff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f4367e1842fe694c834d33b71efedff, type: 3}
@@ -43887,13 +45134,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1621454450
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621454446}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1561479028}
 --- !u!43 &1629995658
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45378
+  m_Name: pb_Mesh42522
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -44057,7 +45318,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45028
+  m_Name: pb_Mesh42948
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -44221,7 +45482,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45648
+  m_Name: pb_Mesh42258
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -44461,6 +45722,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 53cf6acd4b7e3c84bae7597fa82e48df,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 53cf6acd4b7e3c84bae7597fa82e48df,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -44473,6 +45739,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring2W8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 53cf6acd4b7e3c84bae7597fa82e48df,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53cf6acd4b7e3c84bae7597fa82e48df, type: 3}
@@ -44767,13 +46038,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1693877271
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693877267}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1031321580}
 --- !u!43 &1721142162
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45568
+  m_Name: pb_Mesh42906
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -44995,6 +46280,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 883ca2de11b0bee4cbb32c74c6995f56,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 883ca2de11b0bee4cbb32c74c6995f56,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -45007,6 +46297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring73
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 883ca2de11b0bee4cbb32c74c6995f56,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 883ca2de11b0bee4cbb32c74c6995f56, type: 3}
@@ -45242,6 +46537,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1723879447
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723879443}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 346967705}
 --- !u!1001 &1730941078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45306,6 +46615,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: b3188cccdb2f4d7458c88d13b0611407,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: b3188cccdb2f4d7458c88d13b0611407,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -45318,6 +46632,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring3W1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b3188cccdb2f4d7458c88d13b0611407,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3188cccdb2f4d7458c88d13b0611407, type: 3}
@@ -45612,13 +46931,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1730941084
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730941080}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1520921541}
 --- !u!43 &1735081722
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45158
+  m_Name: pb_Mesh43020
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -45850,6 +47183,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: b1ff1c9186966ea48a14b8fa7e95d82f,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: b1ff1c9186966ea48a14b8fa7e95d82f,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -45862,6 +47200,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring6W4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b1ff1c9186966ea48a14b8fa7e95d82f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1ff1c9186966ea48a14b8fa7e95d82f, type: 3}
@@ -46156,6 +47499,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1736162461
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736162457}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 144617489}
 --- !u!1001 &1740876836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46220,6 +47577,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 669619d67a065fb458e975df44d727a6,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 669619d67a065fb458e975df44d727a6,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -46232,6 +47594,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring2W7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 669619d67a065fb458e975df44d727a6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 669619d67a065fb458e975df44d727a6, type: 3}
@@ -46526,13 +47893,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1740876842
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740876838}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1199665481}
 --- !u!43 &1756887582
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45118
+  m_Name: pb_Mesh42316
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -46690,12 +48071,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!4 &1760651748 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 70208544445911313, guid: 679938794a38a504fba867749dfb494a,
-    type: 3}
-  m_PrefabInstance: {fileID: 70208544918121393}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1781419363
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46760,6 +48135,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 0cb646a9c8c7b0a40905dcc6dffa655c,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 0cb646a9c8c7b0a40905dcc6dffa655c,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -46772,6 +48152,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring41
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0cb646a9c8c7b0a40905dcc6dffa655c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cb646a9c8c7b0a40905dcc6dffa655c, type: 3}
@@ -47432,13 +48817,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1781419369
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781419365}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1247165696}
 --- !u!43 &1786816153
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45468
+  m_Name: pb_Mesh42356
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -47660,6 +49059,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: d307508c6f8731041b9329169aafed2c,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: d307508c6f8731041b9329169aafed2c,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -47672,6 +49076,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring48
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d307508c6f8731041b9329169aafed2c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d307508c6f8731041b9329169aafed2c, type: 3}
@@ -47907,6 +49316,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1801408389
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801408385}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1522884637}
 --- !u!1001 &1807751732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47971,6 +49394,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 102d3eace1463ae4bba848d0b90af5cd,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 102d3eace1463ae4bba848d0b90af5cd,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -47983,6 +49411,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring55
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 102d3eace1463ae4bba848d0b90af5cd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 102d3eace1463ae4bba848d0b90af5cd, type: 3}
@@ -49186,13 +50619,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1807751738
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807751734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1721142162}
 --- !u!43 &1809901209
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45408
+  m_Name: pb_Mesh42382
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -49414,6 +50861,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 138b1aa8e83753e418b6ab376386310c,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 138b1aa8e83753e418b6ab376386310c,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -49426,6 +50878,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring71
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 138b1aa8e83753e418b6ab376386310c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 138b1aa8e83753e418b6ab376386310c, type: 3}
@@ -49661,6 +51118,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1873754663
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873754659}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 171165584}
 --- !u!95 &1876062659 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 70208545585945202, guid: 679938794a38a504fba867749dfb494a,
@@ -49895,6 +51366,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 07e9d0bbfca2f494da003477ed7bf00d,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 07e9d0bbfca2f494da003477ed7bf00d,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -49907,6 +51383,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring47
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 07e9d0bbfca2f494da003477ed7bf00d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07e9d0bbfca2f494da003477ed7bf00d, type: 3}
@@ -50204,13 +51685,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1892808834
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892808830}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1301413513}
 --- !u!43 &1898560557
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45068
+  m_Name: pb_Mesh42398
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -50432,6 +51927,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: d584f7d56240fb24183482cd0697b9cf,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: d584f7d56240fb24183482cd0697b9cf,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -50444,6 +51944,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring51
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d584f7d56240fb24183482cd0697b9cf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d584f7d56240fb24183482cd0697b9cf, type: 3}
@@ -51042,13 +52547,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1918997314
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918997310}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1355254353}
 --- !u!43 &1931106508
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45678
+  m_Name: pb_Mesh42270
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -51270,6 +52789,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: d8cc9b0bcbbf6f441ab6b8a39397bee9,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: d8cc9b0bcbbf6f441ab6b8a39397bee9,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -51282,6 +52806,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring2W1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d8cc9b0bcbbf6f441ab6b8a39397bee9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8cc9b0bcbbf6f441ab6b8a39397bee9, type: 3}
@@ -51576,6 +53105,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1931774399
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931774395}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1630139976}
 --- !u!1001 &1956638027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51640,6 +53183,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: f4835aa359b78cc4cb889d220b191b36,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: f4835aa359b78cc4cb889d220b191b36,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -51652,6 +53200,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring4W5
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f4835aa359b78cc4cb889d220b191b36,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4835aa359b78cc4cb889d220b191b36, type: 3}
@@ -51946,13 +53499,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1956638033
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956638029}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 558190276}
 --- !u!43 &1972478710
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45188
+  m_Name: pb_Mesh42564
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -52174,6 +53741,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: eb55968e7cd5b034281d3b865aebc1cf,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: eb55968e7cd5b034281d3b865aebc1cf,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -52186,6 +53758,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring67
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eb55968e7cd5b034281d3b865aebc1cf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb55968e7cd5b034281d3b865aebc1cf, type: 3}
@@ -52362,6 +53939,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1973756007
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973756003}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 92833381}
 --- !u!1001 &1984740314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52436,6 +54027,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 75a8321572ef4ca4dbc72119c3c7a4c1,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 75a8321572ef4ca4dbc72119c3c7a4c1,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -52448,6 +54044,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring2W4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 75a8321572ef4ca4dbc72119c3c7a4c1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75a8321572ef4ca4dbc72119c3c7a4c1, type: 3}
@@ -52683,6 +54284,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &1984740320
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984740316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 152482355}
 --- !u!1 &2002778906
 GameObject:
   m_ObjectHideFlags: 0
@@ -52783,6 +54398,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 73249f612735a6443ab2684dc5fd2dd7,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 73249f612735a6443ab2684dc5fd2dd7,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -52795,6 +54415,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring54
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 73249f612735a6443ab2684dc5fd2dd7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73249f612735a6443ab2684dc5fd2dd7, type: 3}
@@ -52971,6 +54596,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &2014066032
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014066028}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1112086572}
 --- !u!1001 &2035131038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53045,6 +54684,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 1ee6fd0b944782e419109b13bd7f71c9,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 1ee6fd0b944782e419109b13bd7f71c9,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -53057,6 +54701,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring4W6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ee6fd0b944782e419109b13bd7f71c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ee6fd0b944782e419109b13bd7f71c9, type: 3}
@@ -53351,6 +55000,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &2035131044
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035131040}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2068990035}
 --- !u!1 &2038284792
 GameObject:
   m_ObjectHideFlags: 0
@@ -53402,7 +55065,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45218
+  m_Name: pb_Mesh42994
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -53566,7 +55229,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45328
+  m_Name: pb_Mesh42668
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -53730,7 +55393,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45308
+  m_Name: pb_Mesh43036
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -54006,6 +55669,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 4451209659cbc584094fa9e27cd876de,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 4451209659cbc584094fa9e27cd876de,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -54018,6 +55686,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring3W6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4451209659cbc584094fa9e27cd876de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4451209659cbc584094fa9e27cd876de, type: 3}
@@ -54253,6 +55926,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &2101076652
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101076648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1735081722}
 --- !u!1001 &2102977373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54317,6 +56004,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 4d7a2ca750f05e44e8803ce328f25f2e,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 4d7a2ca750f05e44e8803ce328f25f2e,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -54329,6 +56021,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring31
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d7a2ca750f05e44e8803ce328f25f2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d7a2ca750f05e44e8803ce328f25f2e, type: 3}
@@ -54868,6 +56565,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &2102977379
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102977375}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 909944787}
 --- !u!1001 &2104605026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54942,6 +56653,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: d2b33be84e3988e4baebabff940c91c5,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0af17c4d5fbff7d43aa79c6f27f9fdb5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: d2b33be84e3988e4baebabff940c91c5,
+        type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
@@ -54954,6 +56670,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring6W1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d2b33be84e3988e4baebabff940c91c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2b33be84e3988e4baebabff940c91c5, type: 3}
@@ -55189,6 +56910,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &2104605032
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104605028}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2086703255}
 --- !u!1001 &70208544918121393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55224,12 +56959,12 @@ PrefabInstance:
     - target: {fileID: 70208544445911313, guid: 679938794a38a504fba867749dfb494a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -28.000301
+      value: -10.999529
       objectReference: {fileID: 0}
     - target: {fileID: 70208544445911313, guid: 679938794a38a504fba867749dfb494a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 51.999836
+      value: -81.00007
       objectReference: {fileID: 0}
     - target: {fileID: 70208544821111221, guid: 679938794a38a504fba867749dfb494a,
         type: 3}
@@ -55340,6 +57075,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2177975497487817588, guid: 9e09558cb42f13646bc0decf7ad8adf6,
+        type: 3}
+      propertyPath: debugMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2177975497487817588, guid: 9e09558cb42f13646bc0decf7ad8adf6,
+        type: 3}
+      propertyPath: collisionDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2177975497487817588, guid: 9e09558cb42f13646bc0decf7ad8adf6,
+        type: 3}
+      propertyPath: bushLayerMask.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 2177975497487817590, guid: 9e09558cb42f13646bc0decf7ad8adf6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2177975497487817591, guid: 9e09558cb42f13646bc0decf7ad8adf6,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2177975497487817591, guid: 9e09558cb42f13646bc0decf7ad8adf6,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2177975497487817592, guid: 9e09558cb42f13646bc0decf7ad8adf6,
         type: 3}
       propertyPath: m_Name
