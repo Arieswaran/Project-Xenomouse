@@ -11,14 +11,19 @@ public class RaisePhaseController : MonoBehaviour
 
     public static RaisePhaseController instance;
 
+    [SerializeField] private ChoicePanelController choicePanelController;
+
     private void Awake()
     {
         instance = this;
     }
 
-    private void OnEnable()
-    {
-
+    private void Start() {
+        int generation_count = GameManager.instance.GetGenerationCount();
+        if (generation_count > 1)
+        {
+            choicePanelController.gameObject.SetActive(true);
+        }
     }
 
     // Animation states "Playing" "Brushing" "Eating"

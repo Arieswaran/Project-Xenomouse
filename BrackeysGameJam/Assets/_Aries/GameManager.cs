@@ -59,18 +59,43 @@ public class GameManager : MonoBehaviour
     public void IncreaseMouseHealth(int amount)
     {
         mouseData.health += amount;
+        if (mouseData.health > mouseData.max_health)
+        {
+            mouseData.max_health = mouseData.health;
+        }
         mouseData.OnStatsChanged?.Invoke();
     }
 
-    public void IncreaseMouseSpeed(int amount)
+    public void IncreaseMouseSpeed(int percentage)
     {
-        mouseData.speed += amount;
+        mouseData.speed += Mathf.CeilToInt(mouseData.speed * percentage / 100f);
         mouseData.OnStatsChanged?.Invoke();
     }
 
     public void IncreaseMouseLifespan(int amount)
     {
         mouseData.lifespan += amount;
+        mouseData.OnStatsChanged?.Invoke();
+    }
+
+    public void IncreaseMouseLifespanByPercentageFromPreviousMouse(int percentage)
+    {
+        MouseData previousMouseData = previousGenerationMice[previousGenerationMice.Count - 1];
+        mouseData.lifespan += Mathf.CeilToInt(previousMouseData.lifespan * percentage / 100f);
+        mouseData.OnStatsChanged?.Invoke();
+    }
+
+    public void IncreaseMouseSpeedByPercentageFromPreviousMouse(int percentage)
+    {
+        MouseData previousMouseData = previousGenerationMice[previousGenerationMice.Count - 1];
+        mouseData.speed += Mathf.CeilToInt(previousMouseData.speed * percentage / 100f);
+        mouseData.OnStatsChanged?.Invoke();
+    }
+
+    public void IncreaseMouseHealthByPercentageFromPreviousMouse(int percentage)
+    {
+        MouseData previousMouseData = previousGenerationMice[previousGenerationMice.Count - 1];
+        mouseData.health += Mathf.CeilToInt(previousMouseData.health * percentage / 100f);
         mouseData.OnStatsChanged?.Invoke();
     }
 
@@ -103,6 +128,7 @@ public class GameManager : MonoBehaviour
         mouseData.brushed_count++;
     }
 
+
     public void GenerateNextGenerationMouse(){ // Include stats from previous generation or use the number of collected cheese as a factor
         previousGenerationMice.Add(mouseData);
 
@@ -117,20 +143,15 @@ public class GameManager : MonoBehaviour
                 extra_stats += 1f;
             }
         }
-        Debug.Log("Extra stats: " + extra_stats);
         MouseData newMouseData = new MouseData();
         newMouseData.health = INITIAL_MAX_HEALTH + Mathf.CeilToInt(mouseData.max_health * extra_stats / 100f);
         newMouseData.max_health = mouseData.health;
         newMouseData.speed = INITIAL_SPEED + Mathf.CeilToInt(mouseData.speed * extra_stats / 100f);
         newMouseData.lifespan = INITIAL_LIFESPAN + Mathf.CeilToInt(mouseData.lifespan * extra_stats / 100f);
-        newMouseData.max_actions = INITIAL_MAX_ACTIONS;//+ (int) (mouseData.max_actions * extra_stats / 100f);
+        newMouseData.max_actions = INITIAL_MAX_ACTIONS;
         newMouseData.actions = mouseData.max_actions;
         newMouseData.generation_count++;
-        Debug.Log("New mouse data: " + newMouseData.max_health);
-        Debug.Log("New mouse data: " + newMouseData.speed);
-        Debug.Log("New mouse data: " + newMouseData.lifespan);
         mouseData = newMouseData;
-        Debug.Log("New mouse data: " + mouseData.max_health);
         Invoke("LoadRaiseScene", 3f);
     }
 
@@ -148,6 +169,10 @@ public class GameManager : MonoBehaviour
 
     public PlayerData GetPlayerData(){
         return playerData;
+    }
+
+    public int GetGenerationCount(){
+        return mouseData.generation_count;
     }
 
 }
