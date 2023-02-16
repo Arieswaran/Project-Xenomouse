@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace Synith
-{
+
     public class Enemy : Unit
     {
         [SerializeField] List<Transform> patrolTransformList;
@@ -111,4 +110,3 @@ namespace Synith
 
         }
     }
-}
