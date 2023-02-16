@@ -152,7 +152,7 @@ public class GameManager : MonoBehaviour
         newMouseData.actions = mouseData.max_actions;
         newMouseData.generation_count++;
         mouseData = newMouseData;
-        Invoke("LoadRaiseScene", 3f);
+        Invoke(nameof(LoadRaiseScene), 3f);
     }
 
     public List<MouseData> GetPreviousGenerationMice(){
@@ -160,11 +160,11 @@ public class GameManager : MonoBehaviour
     }
 
     public void LoadMazeScene(){
-        SceneManager.LoadScene("MazePhaseScene");
+        GameSceneManager.Load(GameSceneManager.Scene.MazePhaseScene);
     }
 
     public void LoadRaiseScene(){
-        SceneManager.LoadScene("RaisePhaseScene");
+        GameSceneManager.Load(GameSceneManager.Scene.RaisePhaseScene);
     }
 
     public PlayerData GetPlayerData(){

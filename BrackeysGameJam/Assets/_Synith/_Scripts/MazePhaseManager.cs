@@ -39,13 +39,6 @@ public class MazePhaseManager : MonoBehaviour
     {
         if (GameManager.instance == null) return;
         GameManager.instance.GenerateNextGenerationMouse();
-        Debug.Log("Generated Next Mouse");
-    }
-
-    void LoadRaisePhaseScene()
-    {
-        Debug.Log("LOADING: Raise Phase Scene");
-        GameSceneManager.Load(GameSceneManager.Scene.RaisePhaseScene);
     }
 
     public void IncreaseRedCheeseCount()
