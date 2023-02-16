@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class ActionPanelController : MonoBehaviour
 {
@@ -19,26 +20,34 @@ public class ActionPanelController : MonoBehaviour
     private void SetButtons(){
         FeedButton.onClick.RemoveAllListeners();
         FeedButton.onClick.AddListener(() => {
-            ToggleFeedOptions();
+            AnimationHelper.pressButton(FeedButton.transform, ToggleFeedOptions);
         });
         BrushButton.onClick.RemoveAllListeners();
         BrushButton.onClick.AddListener(() => {
-            raisePhaseController.TriggerBrushing();
+            AnimationHelper.pressButton(BrushButton.transform, () => {
+                raisePhaseController.TriggerBrushing();
+            });
         });
         PlayButton.onClick.RemoveAllListeners();
         PlayButton.onClick.AddListener(() => {
-            raisePhaseController.TriggerPlaying();
+            AnimationHelper.pressButton(PlayButton.transform, () => {
+                raisePhaseController.TriggerPlaying();
+            });
         });
         FeedCheeseButton.onClick.RemoveAllListeners();
         FeedCheeseButton.onClick.AddListener(() => {
-            ToggleCheeseButtons();
-            ToggleFeedOptions();
+            AnimationHelper.pressButton(FeedCheeseButton.transform, () => {
+                ToggleCheeseButtons();
+                ToggleFeedOptions();               
+            });
         });
         FeedPelletButton.onClick.RemoveAllListeners();
         FeedPelletButton.onClick.AddListener(() => {
-            raisePhaseController.TriggerEating();
-            GameManager.instance.IncreaseMouseHealth(1);
-            ToggleFeedOptions();
+            AnimationHelper.pressButton(FeedPelletButton.transform, () => {
+                raisePhaseController.TriggerEating();
+                GameManager.instance.IncreaseMouseHealth(1);
+                ToggleFeedOptions();
+            });
         });
         // SendToMazeButton.onClick.RemoveAllListeners();
         // SendToMazeButton.onClick.AddListener(() => {
@@ -50,27 +59,33 @@ public class ActionPanelController : MonoBehaviour
         // });
         RedCheeseButton.onClick.RemoveAllListeners();
         RedCheeseButton.onClick.AddListener(() => {
-            raisePhaseController.TriggerEating();
-            GameManager.instance.IncreaseMouseHealth(10);
-            GameManager.instance.IncreaseRedCheese(-1);
-            ToggleCheeseButtons();
-            CheckCheeseAvailability();
+            AnimationHelper.pressButton(RedCheeseButton.transform, () =>{
+                raisePhaseController.TriggerEating();
+                GameManager.instance.IncreaseMouseHealth(10);
+                GameManager.instance.IncreaseRedCheese(-1);
+                ToggleCheeseButtons();
+                CheckCheeseAvailability();
+            });
         });
         BlueCheeseButton.onClick.RemoveAllListeners();
         BlueCheeseButton.onClick.AddListener(() => {
-            raisePhaseController.TriggerEating();
-            GameManager.instance.IncreaseMouseSpeed(10);
-            GameManager.instance.IncreaseBlueCheese(-1);
-            ToggleCheeseButtons();
-            CheckCheeseAvailability();
+            AnimationHelper.pressButton(BlueCheeseButton.transform, () =>{
+                raisePhaseController.TriggerEating();
+                GameManager.instance.IncreaseMouseSpeed(10);
+                GameManager.instance.IncreaseBlueCheese(-1);
+                ToggleCheeseButtons();
+                CheckCheeseAvailability();
+            });
         });
         GreenCheeseButton.onClick.RemoveAllListeners();
         GreenCheeseButton.onClick.AddListener(() => {
-            raisePhaseController.TriggerEating();
-            GameManager.instance.IncreaseMouseLifespan(20);
-            GameManager.instance.IncreaseGreenCheese(-1);
-            ToggleCheeseButtons();
-            CheckCheeseAvailability();
+            AnimationHelper.pressButton(GreenCheeseButton.transform, () =>{
+                raisePhaseController.TriggerEating();
+                GameManager.instance.IncreaseMouseLifespan(20);
+                GameManager.instance.IncreaseGreenCheese(-1);
+                ToggleCheeseButtons();
+                CheckCheeseAvailability();
+            });
         });
     }
 
