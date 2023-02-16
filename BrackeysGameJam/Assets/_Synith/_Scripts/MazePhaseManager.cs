@@ -40,7 +40,6 @@ public class MazePhaseManager : MonoBehaviour
         if (GameManager.instance == null) return;
         GameManager.instance.GenerateNextGenerationMouse();
         Debug.Log("Generated Next Mouse");
-        Invoke(nameof(LoadRaisePhaseScene), 3f);
     }
 
     void LoadRaisePhaseScene()
