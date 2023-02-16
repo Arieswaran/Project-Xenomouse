@@ -14,6 +14,8 @@ public class RaisePhaseController : MonoBehaviour
 
     [SerializeField] private ChoicePanelController choicePanelController;
     [SerializeField] private Transform mouse;
+    [SerializeField] private Button logButton;
+    [SerializeField] private JournalPopupController journalPopupController;
     private float currentScale = 1f;
     private float scaleChange = 1.1f;
 
@@ -27,8 +29,20 @@ public class RaisePhaseController : MonoBehaviour
         if (generation_count >= 1)
         {
             choicePanelController.gameObject.SetActive(true);
+            logButton.gameObject.SetActive(true);
+        }else{
+            choicePanelController.gameObject.SetActive(false);
+            logButton.gameObject.SetActive(false);
         }
         currentScale = mouse.localScale.x;
+        SetButtons();
+    }
+
+    private void SetButtons(){
+        logButton.onClick.RemoveAllListeners();
+        logButton.onClick.AddListener(() => {
+            journalPopupController.gameObject.SetActive(true);
+        });
     }
 
     // Animation states "Playing" "Brushing" "Eating"
