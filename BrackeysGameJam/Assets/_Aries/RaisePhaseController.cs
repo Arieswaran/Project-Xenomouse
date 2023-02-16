@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class RaisePhaseController : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class RaisePhaseController : MonoBehaviour
     public static RaisePhaseController instance;
 
     [SerializeField] private ChoicePanelController choicePanelController;
+    [SerializeField] private Transform mouse;
+    private float currentScale = 1f;
+    private float scaleChange = 1.1f;
 
     private void Awake()
     {
@@ -24,6 +28,7 @@ public class RaisePhaseController : MonoBehaviour
         {
             choicePanelController.gameObject.SetActive(true);
         }
+        currentScale = mouse.localScale.x;
     }
 
     // Animation states "Playing" "Brushing" "Eating"
@@ -42,7 +47,8 @@ public class RaisePhaseController : MonoBehaviour
     public void TriggerEating(){
         _mouseAnimator.SetTrigger("Eating");
         GameManager.instance.DecreaseActions();
-        DoCommonThingsAfterAction();
+        Invoke(nameof(IncreaseMouseScale), 1.5f);
+        DoCommonThingsAfterAction(2.1f);
     }
 
     public void TriggerRevive(){
@@ -50,7 +56,7 @@ public class RaisePhaseController : MonoBehaviour
         DoCommonThingsAfterAction();
     }
 
-    private void DoCommonThingsAfterAction(){ 
+    private void DoCommonThingsAfterAction(float delay = 1.6f){ 
         overlay.SetActive(true); // To prevent multiple animation triggers from overlapping
         if(GameManager.instance.CanDoActions())
             Invoke("DisableOverlay", 1.6f); // Disable overlay after 1.5 seconds
@@ -58,6 +64,11 @@ public class RaisePhaseController : MonoBehaviour
             // Load Maze Scene
             GameManager.instance.LoadMazeScene();
         }
+    }
+
+    private void IncreaseMouseScale(){
+        mouse.DOScale(currentScale * scaleChange, 0.5f);
+        currentScale *= scaleChange;
     }
 
     private void DisableOverlay(){

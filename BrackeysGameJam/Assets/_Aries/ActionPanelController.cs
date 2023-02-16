@@ -45,7 +45,6 @@ public class ActionPanelController : MonoBehaviour
         FeedPelletButton.onClick.AddListener(() => {
             AnimationHelper.pressButton(FeedPelletButton.transform, () => {
                 raisePhaseController.TriggerEating();
-                GameManager.instance.IncreaseMouseHealth(1);
                 ToggleFeedOptions();
             });
         });
