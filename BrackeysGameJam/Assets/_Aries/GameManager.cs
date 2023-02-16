@@ -150,6 +150,7 @@ public class GameManager : MonoBehaviour
         newMouseData.lifespan = INITIAL_LIFESPAN + Mathf.CeilToInt(mouseData.lifespan * extra_stats / 100f);
         newMouseData.max_actions = INITIAL_MAX_ACTIONS;
         newMouseData.actions = mouseData.max_actions;
+        newMouseData.generation_count = mouseData.generation_count;
         newMouseData.generation_count++;
         mouseData = newMouseData;
         Invoke(nameof(LoadRaiseScene), 3f);
