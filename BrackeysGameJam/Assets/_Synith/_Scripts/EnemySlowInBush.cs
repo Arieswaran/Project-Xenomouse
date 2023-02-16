@@ -12,7 +12,7 @@ public class EnemySlowInBush : MonoBehaviour
     public event Action<bool> OnBushStatusChanged;
     bool isInBush;
 
-    private void OnDrawGizmos()
+    void OnDrawGizmos()
     {
         if (CheckIfInBush())
             Handles.color = Color.blue;
@@ -21,7 +21,7 @@ public class EnemySlowInBush : MonoBehaviour
         Handles.DrawWireDisc(transform.position, transform.up, radius);
     }
 
-    private void Update()
+    void Update()
     {
         bool isInBush = CheckIfInBush();
         if (this.isInBush != isInBush)
