@@ -9,6 +9,9 @@ public abstract class Unit : MonoBehaviour
     [SerializeField] protected int maxHealth = 100;
     [SerializeField] protected Animator animator;
 
+
+
+
     Rigidbody rb;
 
     protected virtual void Awake()
@@ -20,7 +23,7 @@ public abstract class Unit : MonoBehaviour
     {
         //rb.ResetInertiaTensor();
         HandleMovement();
-        HandleAnimation();
+        HandleAnimation();        
     }
 
     void HandleAnimation()
