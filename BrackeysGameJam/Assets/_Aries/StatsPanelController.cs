@@ -12,13 +12,17 @@ public class StatsPanelController : MonoBehaviour
     private void Start()
     {
         GameManager.instance.GetMouseData().OnStatsChanged += UpdateStats;
-        UpdateStats();
+        MouseData mouseData = GameManager.instance.GetMouseData();
+        healthText.text = "Health: " + mouseData.health;
+        speedText.text = "Speed: " + mouseData.speed;
+        lifespanText.text = "Lifespan: " + mouseData.lifespan;
+        actionsText.text = "Actions: " + mouseData.actions;
     }
 
     private void UpdateStats()
     {
-        Debug.Log("Updating Stats");
         MouseData mouseData = GameManager.instance.GetMouseData();
+        
         healthText.text = "Health: " + mouseData.health;
         speedText.text = "Speed: " + mouseData.speed;
         lifespanText.text = "Lifespan: " + mouseData.lifespan;
