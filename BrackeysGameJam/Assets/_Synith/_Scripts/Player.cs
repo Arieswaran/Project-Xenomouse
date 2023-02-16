@@ -11,10 +11,20 @@ public class Player : Unit
     PlayerInputActions playerInputActions;
     MouseMazeStats mouseStats;
     float startingMoveSpeed;
+    float buffedMoveSpeed;
     int lifeSpan;
     bool isDead;
+    [SerializeField] bool debugMode;
+    [SerializeField] LayerMask bushLayerMask;
+    [SerializeField] float collisionDistance = 1.5f;
 
     public static event Action OnMouseDeath;
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawLine(transform.position + Vector3.up, transform.position + transform.forward * collisionDistance);
+    }
 
     public void SetStats(int health, int speed, int lifeSpanSeconds)
     {
@@ -34,6 +44,7 @@ public class Player : Unit
     {
         maxHealth = mouseStats.Health;
         moveSpeed = startingMoveSpeed * (1 + mouseStats.Speed * 0.1f);
+        buffedMoveSpeed = moveSpeed;
         lifeSpan = mouseStats.LifeSpan;
     }
 
@@ -44,8 +55,6 @@ public class Player : Unit
             yield return new WaitForSeconds(1f);
 
             lifeSpan--;
-
-            //Debug.Log(mouseStats.LifeSpan);
 
             if (lifeSpan <= 0)
             {
@@ -73,8 +82,12 @@ public class Player : Unit
         if (!MazePhaseManager.Instance.TryApplyStatsFromLastGeneration())
         {
             // if there is no game manager use testing stats
-            SetStats(new(2, 5, 14));
-        }        
+            MouseMazeStats defaultStats = new(2, 5, 14);
+            MouseMazeStats godModeStats = new(99, 50, 999);
+
+            MouseMazeStats startingStats = debugMode ? godModeStats : defaultStats;
+            SetStats(startingStats);
+        }
     }
 
     void OnEnable()
@@ -89,11 +102,23 @@ public class Player : Unit
 
     protected override Vector3 CalculateMoveDirection()
     {
+
         if (isDead) return Vector3.zero;
 
         InputAction moveAction = playerInputActions.Player.Move;
         Vector2 input = moveAction.ReadValue<Vector2>();
         Vector3 moveDirection = Vector3.zero;
+
+        Ray ray = new(transform.position + Vector3.up, transform.forward * collisionDistance);
+
+        if (Physics.Raycast(ray, collisionDistance, bushLayerMask))
+        {
+            moveSpeed = 0;
+        }
+        else
+        {
+            moveSpeed = buffedMoveSpeed;
+        }
 
         moveDirection += Vector3.ProjectOnPlane(Camera.main.transform.right, transform.up).normalized * input.x;
         moveDirection += Vector3.ProjectOnPlane(Camera.main.transform.forward, transform.up).normalized * input.y;
@@ -146,6 +171,6 @@ public class Player : Unit
             Debug.Log("Ouch!");
             animator.SetTrigger("Hurt");
         }
-        
+
     }
 }
