@@ -17,6 +17,7 @@ public class StatsPanelController : MonoBehaviour
 
     private void UpdateStats()
     {
+        Debug.Log("Updating Stats");
         MouseData mouseData = GameManager.instance.GetMouseData();
         healthText.text = "Health: " + mouseData.health;
         speedText.text = "Speed: " + mouseData.speed;

@@ -61,6 +61,7 @@ public class Player : Unit
         animator.SetTrigger("Death");
 
         OnMouseDeath?.Invoke();
+        GameManager.instance.GenerateNextGenerationMouse();
     }
 
     protected override void Awake()

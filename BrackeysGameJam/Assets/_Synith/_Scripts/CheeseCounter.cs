@@ -22,14 +22,17 @@ public class CheeseCounter : MonoBehaviour
             case Cheese.CheeseType.Red:
                 MazePhaseManager.Instance.IncreaseRedCheeseCount();
                 redCheese++;
+                GameManager.instance.IncreaseRedCheese();
                 break;
             case Cheese.CheeseType.Green:
                 MazePhaseManager.Instance.IncreaseGreenCheeseCount();
                 greenCheese++;
+                GameManager.instance.IncreaseGreenCheese();
                 break;
             case Cheese.CheeseType.Blue:
                 MazePhaseManager.Instance.IncreaseBlueCheeseCount();
                 blueCheese++;
+                GameManager.instance.IncreaseBlueCheese();
                 break;
         }
 
