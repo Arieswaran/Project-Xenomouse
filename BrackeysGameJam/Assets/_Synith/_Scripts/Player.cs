@@ -4,26 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class MouseStats
-{
-    public MouseStats(int health, int speed, int lifeSpan)
-    {
-        Health = health;
-        Speed = speed;
-        LifeSpan = lifeSpan;
-    }
 
-    public int Health { get; set; }
-    public int Speed { get; set; }
-    public int LifeSpan { get; set; }
-}
 
 public class Player : Unit
 {
     PlayerInputActions playerInputActions;
-    MouseStats mouseStats;
+    MouseMazeStats mouseStats;
     float startingMoveSpeed;
-    int startingLifeSpan;
+    int lifeSpan;
     bool isDead;
 
     public static event Action OnMouseDeath;
@@ -35,7 +23,7 @@ public class Player : Unit
         StartCoroutine(MouseLifeFading());
     }
 
-    public void SetStats(MouseStats mouseStats)
+    public void SetStats(MouseMazeStats mouseStats)
     {
         this.mouseStats = mouseStats;
         UpdateStats();
@@ -45,8 +33,8 @@ public class Player : Unit
     void UpdateStats()
     {
         maxHealth = mouseStats.Health;
-        moveSpeed = startingMoveSpeed + mouseStats.Speed * 0.1f;
-        startingLifeSpan = mouseStats.LifeSpan;
+        moveSpeed = startingMoveSpeed * (1 + mouseStats.Speed * 0.1f);
+        lifeSpan = mouseStats.LifeSpan;
     }
 
     IEnumerator MouseLifeFading()
@@ -55,11 +43,11 @@ public class Player : Unit
         {
             yield return new WaitForSeconds(1f);
 
-            mouseStats.LifeSpan--;
+            lifeSpan--;
 
             //Debug.Log(mouseStats.LifeSpan);
 
-            if (mouseStats.LifeSpan <= 0)
+            if (lifeSpan <= 0)
             {
                 Die();
             }
@@ -81,8 +69,12 @@ public class Player : Unit
         playerInputActions = new();
         startingMoveSpeed = moveSpeed;
 
-        // Set default mouse stats
-        SetStats(new(2, 5, 14));
+
+        if (!MazePhaseManager.Instance.TryApplyStatsFromLastGeneration())
+        {
+            // if there is no game manager use testing stats
+            SetStats(new(2, 5, 14));
+        }        
     }
 
     void OnEnable()
