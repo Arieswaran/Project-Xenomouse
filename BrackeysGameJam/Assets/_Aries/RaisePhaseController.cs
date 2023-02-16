@@ -20,7 +20,7 @@ public class RaisePhaseController : MonoBehaviour
 
     private void Start() {
         int generation_count = GameManager.instance.GetGenerationCount();
-        if (generation_count > 1)
+        if (generation_count >= 1)
         {
             choicePanelController.gameObject.SetActive(true);
         }
@@ -42,7 +42,11 @@ public class RaisePhaseController : MonoBehaviour
     public void TriggerEating(){
         _mouseAnimator.SetTrigger("Eating");
         GameManager.instance.DecreaseActions();
-        //need to decrease cheese count , but have to make support for multiple cheese types
+        DoCommonThingsAfterAction();
+    }
+
+    public void TriggerRevive(){
+        _mouseAnimator.SetTrigger("Revive");
         DoCommonThingsAfterAction();
     }
 
