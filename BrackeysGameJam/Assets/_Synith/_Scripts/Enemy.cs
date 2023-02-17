@@ -50,11 +50,11 @@ public class Enemy : Unit
         moveSpeed = isInBush ? bushSpeed : startingSpeed;
     }
 
-    //private void OnDrawGizmos()
-    //{
-    //    Handles.color = Color.green;
-    //    Handles.DrawWireDisc(transform.position, transform.up, detectionRadius);
-    //}
+    private void OnDrawGizmos()
+    {
+        Handles.color = Color.green;
+        Handles.DrawWireDisc(transform.position, transform.up, detectionRadius);
+    }
 
     protected override Vector3 CalculateMoveDirection()
     {
