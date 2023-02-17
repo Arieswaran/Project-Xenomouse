@@ -28,15 +28,14 @@ public class Enemy : Unit
     Transform playerTransform;
     int patrolIndex = 0;
 
-    private void Start()
+    void Start()
     {
         attackCooldownTimer = attackCooldownTimerMax;
 
         targetTransform = patrolTransformList[patrolIndex];
 
-        player = FindObjectOfType<Player>();
+        player = MazePhaseManager.Instance.GetPlayer();
         playerTransform = player.transform;
-        Debug.Log($"Found Player: {player.name}");
 
         startingSpeed = moveSpeed;
         bushSpeed = startingSpeed * BUSH_SPEED_MODIFIER;
@@ -83,7 +82,6 @@ public class Enemy : Unit
 
         if (distanceToNextWaypoint < minDistance)
         {
-            Debug.Log("Arrived at waypoint!");
             patrolIndex = (patrolIndex + 1) % patrolTransformList.Count;
             targetTransform = patrolTransformList[patrolIndex];
             return Vector3.zero;
@@ -114,10 +112,10 @@ public class Enemy : Unit
         player.TakeDamage();
         targetTransform = patrolTransformList[patrolIndex];
 
-        StartCoroutine(AttackCooldown2());
+        StartCoroutine(AttackCooldown());
     }
 
-    IEnumerator AttackCooldown2()
+    IEnumerator AttackCooldown()
     {
         yield return new WaitForSeconds(attackCooldownTimerMax);
 

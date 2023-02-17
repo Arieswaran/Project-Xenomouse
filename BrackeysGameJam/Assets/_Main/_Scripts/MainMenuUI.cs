@@ -7,16 +7,29 @@ public class MainMenuUI : MonoBehaviour
     [SerializeField] Button quitButton;
     void Start()
     {
-        playButton.onClick.AddListener(() => 
+        SetupStartButton();
+        SetupQuitButton();
+    }
+
+    void SetupStartButton()
+    {
+        if (playButton == null) return;
+        playButton.onClick.AddListener(() =>
         {
             GameSceneManager.Load(GameSceneManager.Scene.RaisePhaseScene);
         });
+    }
+
+    void SetupQuitButton()
+    {
+        if (quitButton == null) return;
         quitButton.onClick.AddListener(() =>
         {
             QuitGame();
         });
-
     }
+
+
     void QuitGame()
     {
 #if UNITY_EDITOR
