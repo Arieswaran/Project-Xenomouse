@@ -49,12 +49,13 @@ public class Enemy : Unit
     {
         moveSpeed = isInBush ? bushSpeed : startingSpeed;
     }
-
+#if UNITY_EDITOR
     private void OnDrawGizmos()
     {
         Handles.color = Color.green;
         Handles.DrawWireDisc(transform.position, transform.up, detectionRadius);
     }
+#endif
 
     protected override Vector3 CalculateMoveDirection()
     {
