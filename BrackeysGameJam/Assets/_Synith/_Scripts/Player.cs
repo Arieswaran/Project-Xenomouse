@@ -26,13 +26,6 @@ public class Player : Unit
         Gizmos.DrawLine(transform.position + Vector3.up, transform.position + transform.forward * collisionDistance);
     }
 
-    public void SetStats(int health, int speed, int lifeSpanSeconds)
-    {
-        mouseStats = new(health, speed, lifeSpanSeconds);
-        UpdateStats();
-        StartCoroutine(MouseLifeFading());
-    }
-
     public void SetStats(MouseMazeStats mouseStats)
     {
         this.mouseStats = mouseStats;
@@ -82,7 +75,7 @@ public class Player : Unit
         if (!MazePhaseManager.Instance.TryApplyStatsFromLastGeneration())
         {
             // if there is no game manager use testing stats
-            MouseMazeStats defaultStats = new(2, 5, 14);
+            MouseMazeStats defaultStats = new(20, 5, 14);
             MouseMazeStats godModeStats = new(99, 50, 999);
 
             MouseMazeStats startingStats = debugMode ? godModeStats : defaultStats;
@@ -158,7 +151,7 @@ public class Player : Unit
     {
         if (isDead) return;
 
-        mouseStats.Health--;
+        mouseStats.Health -= 10;
 
         Debug.Log("Health Remaining:" + mouseStats.Health);
 
