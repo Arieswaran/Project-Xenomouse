@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class CheeseCounter : MonoBehaviour
@@ -7,6 +6,12 @@ public class CheeseCounter : MonoBehaviour
     int redCheese;
     int greenCheese;
     int blueCheese;
+
+    public event Action OnCheeseAmountIncreased;
+
+    public int GetRedCheeseCount() => redCheese;
+    public int GetGreenCheeseCount() => greenCheese;
+    public int GetBlueCheeseCount() => blueCheese;
 
     void Start()
     {
@@ -18,7 +23,7 @@ public class CheeseCounter : MonoBehaviour
         Cheese.OnAnyCheeseConsumed -= Cheese_OnAnyCheeseConsumed;
     }
 
-    void Cheese_OnAnyCheeseConsumed(object sender, System.EventArgs e)
+    void Cheese_OnAnyCheeseConsumed(object sender, EventArgs e)
     {
         Cheese cheese = sender as Cheese;
 
@@ -37,7 +42,7 @@ public class CheeseCounter : MonoBehaviour
                 blueCheese++;
                 break;
         }
-
+        OnCheeseAmountIncreased?.Invoke();
         Debug.Log($"Red: {redCheese} Green: {greenCheese} Blue: {blueCheese}");
     }
 }

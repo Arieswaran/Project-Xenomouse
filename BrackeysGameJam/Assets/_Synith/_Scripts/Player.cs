@@ -19,12 +19,17 @@ public class Player : Unit
     [SerializeField] float collisionDistance = 1.5f;
 
     public static event Action OnMouseDeath;
+    public event Action<int> OnHealthAmountChanged;
+    public event Action<int> OnLifespanChanged;
 
     void OnDrawGizmos()
     {
         Gizmos.color = Color.magenta;
         Gizmos.DrawLine(transform.position + Vector3.up, transform.position + transform.forward * collisionDistance);
     }
+
+    public int GetLifeSpan() => lifeSpan;
+    public int GetHealth() => mouseStats.Health;
 
     public void SetStats(MouseMazeStats mouseStats)
     {
@@ -48,9 +53,11 @@ public class Player : Unit
             yield return new WaitForSeconds(1f);
 
             lifeSpan--;
+            OnLifespanChanged?.Invoke(lifeSpan);
 
             if (lifeSpan <= 0)
             {
+                lifeSpan = 0;
                 Die();
             }
         }
@@ -155,12 +162,14 @@ public class Player : Unit
     {
         if (isDead) return;
 
-        mouseStats.Health -= 10;
+        mouseStats.Health -= 10;       
+
 
         Debug.Log("Health Remaining:" + mouseStats.Health);
 
         if (mouseStats.Health <= 0)
         {
+            mouseStats.Health = 0;
             Die();
         }
         else
@@ -168,6 +177,6 @@ public class Player : Unit
             Debug.Log("Ouch!");
             animator.SetTrigger("Hurt");
         }
-
+        OnHealthAmountChanged?.Invoke(mouseStats.Health);
     }
 }

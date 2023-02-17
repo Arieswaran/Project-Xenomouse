@@ -1,9 +1,12 @@
+using System;
 using UnityEngine;
 
 public class MazePhaseManager : MonoBehaviour
 {
     [SerializeField] Player player;
+    public event Action OnGameOver;
 
+  
     public static MazePhaseManager Instance { get; private set; }
     private void Awake()
     {
@@ -59,7 +62,10 @@ public class MazePhaseManager : MonoBehaviour
 
     public void WinGame()
     {
+        OnGameOver?.Invoke();
         Time.timeScale = 0;
         Debug.Log("YOU WIN!!!!");
     }
+
+    public Player GetPlayer() => player;
 }

@@ -12,6 +12,7 @@ public class EnemySlowInBush : MonoBehaviour
     public event Action<bool> OnBushStatusChanged;
     bool isInBush;
 
+#if UNITY_EDITOR
     void OnDrawGizmos()
     {
         if (CheckIfInBush())
@@ -20,6 +21,7 @@ public class EnemySlowInBush : MonoBehaviour
             Handles.color = Color.grey;
         Handles.DrawWireDisc(transform.position, transform.up, radius);
     }
+#endif
 
     void Update()
     {
