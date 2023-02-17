@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -12,7 +10,12 @@ public class LifespanUI : MonoBehaviour
     {
         player = MazePhaseManager.Instance.GetPlayer();
         player.OnLifespanChanged += Player_OnLifespanLost;
-        UpdateText(player.GetLifespan());
+        UpdateText(player.GetLifeSpan());
+    }
+
+    void OnDestroy()
+    {
+        player.OnLifespanChanged -= Player_OnLifespanLost;
     }
 
     void Player_OnLifespanLost(int lifespanRemaining)

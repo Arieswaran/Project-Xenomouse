@@ -28,7 +28,7 @@ public class Player : Unit
         Gizmos.DrawLine(transform.position + Vector3.up, transform.position + transform.forward * collisionDistance);
     }
 
-    public int GetLifespan() => lifeSpan;
+    public int GetLifeSpan() => lifeSpan;
     public int GetHealth() => mouseStats.Health;
 
     public void SetStats(MouseMazeStats mouseStats)

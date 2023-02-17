@@ -1,53 +1,47 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
-
-    
 
 public class TMPTimer : MonoBehaviour
 {
+    [SerializeField] Image uiFill;
+    [SerializeField] TextMeshProUGUI uiText;
+    Player player;
 
-
-    [SerializeField] private Image uiFill;
-    [SerializeField] private Text uiText;
-    [SerializeField] private Player player;
-
-    public int Duration;
-    public int remainingDuration;
+    int Duration;
 
     private void Start()
     {
-        Duration = player.lifeSpan;
-        Being(Duration);
+        player = MazePhaseManager.Instance.GetPlayer();
+        Duration = player.GetLifeSpan();
+        player.OnLifespanChanged += Player_OnLifespanLost;
+        UpdateText(player.GetLifeSpan());
     }
 
-    private void Being(int Second)
+    void OnDestroy()
     {
-        remainingDuration = Second;
-        StartCoroutine(UpdateTimer());
+        player.OnLifespanChanged -= Player_OnLifespanLost;
     }
 
-    private IEnumerator UpdateTimer()
+    void Player_OnLifespanLost(int lifespanRemaining)
     {
-        
-        while(remainingDuration >= 0)
+        UpdateText(lifespanRemaining);
+    }
+
+    void UpdateText(int lifespan)
+    {
+        uiText.text = $"{lifespan / 60:00}:{lifespan % 60:00}";
+        uiFill.fillAmount = Mathf.InverseLerp(0, Duration, lifespan);
+
+        if (lifespan <= 0)
         {
-
-                uiText.text = $"{remainingDuration / 60:00}:{remainingDuration % 60:00}";
-                uiFill.fillAmount = Mathf.InverseLerp(0, Duration, remainingDuration);
-                remainingDuration--;
-                yield return new WaitForSeconds(1f);
-
+            OnEnd();
         }
-        OnEnd();
     }
 
     private void OnEnd()
     {
-        //End Time , if want Do something
         print("End");
     }
 }
