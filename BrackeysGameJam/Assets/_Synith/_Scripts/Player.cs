@@ -138,6 +138,10 @@ public class Player : Unit
         {
             EatCheese(cheese);
         }
+        if (other.TryGetComponent(out ExitZone exitZone))
+        {
+            exitZone.WinGame();
+        }
     }
 
     void EatCheese(Cheese cheese)
