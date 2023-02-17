@@ -28,7 +28,7 @@ public class Enemy : Unit
     Transform playerTransform;
     int patrolIndex = 0;
 
-    private void Start()
+    void Start()
     {
         attackCooldownTimer = attackCooldownTimerMax;
 
@@ -36,7 +36,6 @@ public class Enemy : Unit
 
         player = FindObjectOfType<Player>();
         playerTransform = player.transform;
-        Debug.Log($"Found Player: {player.name}");
 
         startingSpeed = moveSpeed;
         bushSpeed = startingSpeed * BUSH_SPEED_MODIFIER;
@@ -83,7 +82,6 @@ public class Enemy : Unit
 
         if (distanceToNextWaypoint < minDistance)
         {
-            Debug.Log("Arrived at waypoint!");
             patrolIndex = (patrolIndex + 1) % patrolTransformList.Count;
             targetTransform = patrolTransformList[patrolIndex];
             return Vector3.zero;
