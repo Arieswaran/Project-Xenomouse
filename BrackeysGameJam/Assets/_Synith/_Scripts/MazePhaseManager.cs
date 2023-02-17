@@ -56,4 +56,10 @@ public class MazePhaseManager : MonoBehaviour
         if (GameManager.instance == null) return;
         GameManager.instance.IncreaseBlueCheese();
     }
+
+    public void WinGame()
+    {
+        Time.timeScale = 0;
+        Debug.Log("YOU WIN!!!!");
+    }
 }
