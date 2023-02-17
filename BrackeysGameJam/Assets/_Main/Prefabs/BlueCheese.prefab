@@ -12,6 +12,16 @@ PrefabInstance:
       propertyPath: cheeseType
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2787298779089414359, guid: d6cc2d92382669547ab2c21dbbd30363,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2787298779089414359, guid: d6cc2d92382669547ab2c21dbbd30363,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2787298779089414360, guid: d6cc2d92382669547ab2c21dbbd30363,
         type: 3}
       propertyPath: m_Name
