@@ -12,7 +12,7 @@ public class Player : Unit
     MouseMazeStats mouseStats;
     float startingMoveSpeed;
     float buffedMoveSpeed;
-    int lifeSpan;
+    public int lifeSpan;
     bool isDead;
     [SerializeField] bool debugMode;
     [SerializeField] LayerMask bushLayerMask;
