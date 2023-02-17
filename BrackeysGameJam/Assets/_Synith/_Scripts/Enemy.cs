@@ -34,7 +34,7 @@ public class Enemy : Unit
 
         targetTransform = patrolTransformList[patrolIndex];
 
-        player = FindObjectOfType<Player>();
+        player = MazePhaseManager.Instance.GetPlayer();
         playerTransform = player.transform;
 
         startingSpeed = moveSpeed;
@@ -112,10 +112,10 @@ public class Enemy : Unit
         player.TakeDamage();
         targetTransform = patrolTransformList[patrolIndex];
 
-        StartCoroutine(AttackCooldown2());
+        StartCoroutine(AttackCooldown());
     }
 
-    IEnumerator AttackCooldown2()
+    IEnumerator AttackCooldown()
     {
         yield return new WaitForSeconds(attackCooldownTimerMax);
 
