@@ -49,6 +49,7 @@ public class RaisePhaseController : MonoBehaviour
     private void SetButtons(){
         logButton.onClick.RemoveAllListeners();
         logButton.onClick.AddListener(() => {
+            AnimationHelper.popupAnimation(logButton.transform,overlay);
             journalPopupController.gameObject.SetActive(true);
         });
     }

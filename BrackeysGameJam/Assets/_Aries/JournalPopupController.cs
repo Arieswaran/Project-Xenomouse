@@ -42,7 +42,9 @@ public class JournalPopupController : MonoBehaviour
         closeButton.onClick.AddListener(() => {
             SoundEffects.Instance.PlayClip(journalCloseSound);
             AnimationHelper.pressButton(closeButton.transform,delegate(){
-                gameObject.SetActive(false);
+                AnimationHelper.popupCloseAnimation(transform,null, delegate() {
+                    gameObject.SetActive(false);
+                });
             });
         });
     }

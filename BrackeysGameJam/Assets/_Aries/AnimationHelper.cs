@@ -48,4 +48,68 @@ public static class AnimationHelper
             call_back?.Invoke();
         });
     }
+
+    public static void popupAnimation(Transform popup_content, GameObject overlay = null)
+    {
+        return; //not working as expected, need to fix
+        if (popup_content == null)
+        {
+            return;
+        }
+        RectTransform rect = popup_content.GetComponent<RectTransform>();
+        if (rect != null)
+        {
+            CanvasGroup canvas_group = popup_content.GetComponent<CanvasGroup>();
+            if (canvas_group == null)
+            {
+                canvas_group = popup_content.gameObject.AddComponent<CanvasGroup>();
+            }
+            canvas_group.alpha = 0;
+            canvas_group.DOFade(1, 0.3f);
+
+            Vector3 original_scale = rect.localScale;
+            rect.localScale = new Vector3(0, 0, 0);
+            overlay?.gameObject.SetActive(true);
+            rect.DOScale(new Vector3(original_scale.x + 0.07f, original_scale.y + 0.07f, original_scale.z), 0.2f).OnComplete(delegate ()
+            {
+                rect.DOScale(original_scale, 0.1f).OnComplete(delegate ()
+                {
+                    overlay?.gameObject.SetActive(false);
+                });
+            });
+        }
+    }
+
+    public static void popupCloseAnimation(Transform popup_content, GameObject overlay = null, System.Action callback = null)
+    {
+        callback?.Invoke();
+        return; //not working as expected, need to fix
+        if (popup_content != null)
+        {
+            overlay?.gameObject.SetActive(true);
+            RectTransform rect = popup_content.GetComponent<RectTransform>();
+            if (rect != null)
+            {
+                CanvasGroup canvas_group = popup_content.GetComponent<CanvasGroup>();
+                if (canvas_group == null)
+                {
+                    canvas_group = popup_content.gameObject.AddComponent<CanvasGroup>();
+                }
+                canvas_group.alpha = 1;
+                canvas_group.DOFade(0, 0.3f);
+
+                Vector3 original_scale = rect.localScale;
+                rect.DOScale(new Vector3(original_scale.x - 0.2f, original_scale.y - 0.2f, original_scale.z), 0.3f).OnComplete(delegate ()
+                {
+                    rect.localScale = original_scale;
+                    overlay?.gameObject.SetActive(false);
+                    canvas_group.alpha = 1;
+                    if (callback != null)
+                    {
+                        callback.Invoke();
+                    }
+                });
+            }
+        }
+    }
 }
