@@ -20,9 +20,7 @@ public class Enemy : Unit
     float minDistance = 1f;
     [SerializeField] float attackRange = 6f;
 
-    public bool isAttacking;
-
-
+    bool isAttacking;
     bool isTakingStep;
 
     Player player;
@@ -33,6 +31,7 @@ public class Enemy : Unit
     float stepLength;
 
     bool isInBush;
+    bool hasGrowled;
 
     public event Action OnTakeStep;
     public event Action OnDetectMouse;
@@ -88,22 +87,35 @@ public class Enemy : Unit
     {
         if (isAttacking) return Vector3.zero;
 
+        // get next waypoint from list
         Vector3 nextWaypoint = patrolTransformList[patrolIndex].position;
         float distanceToNextWaypoint = Vector3.Distance(transform.position, nextWaypoint);
         float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
 
         if (distanceToPlayer < detectionRadius)
         {
+            // start chasing
             targetTransform = playerTransform;
-            isChasingPlayer = true;            
+            isChasingPlayer = true;
+
+            if (!hasGrowled)
+            {
+                // growl
+                OnDetectMouse?.Invoke();
+                hasGrowled = true;
+            }
+
         }
         else if (isChasingPlayer && distanceToPlayer > chaseRadius)
         {
+            // Stop Chasing
             targetTransform = patrolTransformList[patrolIndex];
+            hasGrowled = false;
         }
 
         if (distanceToPlayer < attackRange)
         {
+            // attack player
             Debug.Log("Attacking Player!");
             Attack();
             return Vector3.zero;
@@ -111,6 +123,7 @@ public class Enemy : Unit
 
         if (distanceToNextWaypoint < minDistance)
         {
+            // set next waypoint as target
             patrolIndex = (patrolIndex + 1) % patrolTransformList.Count;
             targetTransform = patrolTransformList[patrolIndex];
             return Vector3.zero;
@@ -125,6 +138,7 @@ public class Enemy : Unit
 
         return moveDirection;
     }
+
 
     private void CatTakeStep()
     {
@@ -159,6 +173,8 @@ public class Enemy : Unit
 
         animator.SetTrigger("Bite");
         player.TakeDamage();
+
+        // TODO: Play Attack Particle Effect
         targetTransform = patrolTransformList[patrolIndex];
 
         StartCoroutine(AttackCooldown());
@@ -170,7 +186,5 @@ public class Enemy : Unit
 
         isAttacking = false;
         attackCooldownTimer = attackCooldownTimerMax;
-        Debug.Log($"ATTACK COOLDOWN {attackCooldownTimer}");
-
     }
 }

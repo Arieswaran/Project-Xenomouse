@@ -27,6 +27,14 @@ public class EnemySounds : MonoBehaviour
         enemy.OnDetectMouse += Enemy_OnDetectMouse;
         enemy.OnInBushChanged += Enemy_OnInBushChanged;
         enemy.OnTakeStep += Enemy_OnTakeStep;
+
+        SetVolume();
+    }
+
+    void SetVolume()
+    {
+        float gameVolume = SoundEffects.Instance.GetVolume();
+        catAudio.volume = gameVolume;
     }
 
     private void Enemy_OnTakeStep()

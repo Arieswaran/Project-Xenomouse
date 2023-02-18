@@ -66,7 +66,6 @@ MonoBehaviour:
     m_Bits: 64
   attackCooldownTimerMax: 5
   attackRange: 6
-  isAttacking: 0
 --- !u!114 &-6890166761903302630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,7 +81,6 @@ MonoBehaviour:
   walkSound: {fileID: 8300000, guid: ee1d1081b809a1647a51826390751e3e, type: 3}
   bushSound: {fileID: 8300000, guid: 85a2be7c5c9645e408027117c0d5901d, type: 3}
   detectSound: {fileID: 8300000, guid: ed5ed52599c81f4438270007d0a05c1a, type: 3}
-  biteSound: {fileID: 0}
 --- !u!114 &2429251420486600391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,8 +145,8 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
+  DopplerLevel: 0
+  MinDistance: 10
   MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
