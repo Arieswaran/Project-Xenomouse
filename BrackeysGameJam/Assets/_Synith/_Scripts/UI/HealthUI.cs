@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthUI : MonoBehaviour
 {
     Player player;
     [SerializeField] TextMeshProUGUI healthText;
+    [SerializeField] Image fillImage;
 
     void Start()
     {
@@ -27,6 +29,14 @@ public class HealthUI : MonoBehaviour
 
     void UpdateText(int health)
     {
-        healthText.SetText(health.ToString());
+        if (health < 0)
+        {
+            health = 0;
+        }
+
+         healthText.SetText($"HP  {health}");
+
+        float healthNormalized = (float)health / player.GetMaxHealth();
+        fillImage.fillAmount = healthNormalized;
     }
 }
