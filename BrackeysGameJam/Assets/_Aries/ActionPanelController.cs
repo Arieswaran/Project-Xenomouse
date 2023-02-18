@@ -70,7 +70,7 @@ public class ActionPanelController : MonoBehaviour
         BlueCheeseButton.onClick.AddListener(() => {
             AnimationHelper.pressButton(BlueCheeseButton.transform, () =>{
                 raisePhaseController.TriggerEating();
-                GameManager.instance.IncreaseMouseSpeed(10);
+                GameManager.instance.IncreaseMouseSpeed(20);
                 GameManager.instance.IncreaseBlueCheese(-1);
                 ToggleCheeseButtons();
                 CheckCheeseAvailability();

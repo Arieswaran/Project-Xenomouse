@@ -48,6 +48,8 @@ public class Player : Unit
         StartCoroutine(MouseLifeFading());
     }
 
+    public int GetMaxHealth() => maxHealth;
+
     void UpdateStats()
     {
         maxHealth = mouseStats.Health;

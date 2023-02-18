@@ -13,6 +13,7 @@ public class SoundEffects : MonoBehaviour
     public float SetVolume() => audioSource.volume;
 
     public void PlayClip(AudioClip clip) => audioSource.PlayOneShot(clip);
+    public void PlayClip(AudioClip clip, float volumeScale) => audioSource.PlayOneShot(clip, volumeScale);
 
     private void Awake()
     {

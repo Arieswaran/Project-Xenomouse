@@ -5,6 +5,7 @@ public class MainMenuUI : MonoBehaviour
 {
     [SerializeField] Button playButton;
     [SerializeField] Button quitButton;
+    [SerializeField] AudioClip buttonPressSound;
     void Start()
     {
         SetupStartButton();
@@ -16,9 +17,12 @@ public class MainMenuUI : MonoBehaviour
         if (playButton == null) return;
         playButton.onClick.AddListener(() =>
         {
-            GameSceneManager.Load(GameSceneManager.Scene.RaisePhaseScene);
+            SoundEffects.Instance.PlayClip(buttonPressSound);
+            Invoke(nameof(LoadNextScene), 0.2f);
         });
     }
+
+    void LoadNextScene() => GameSceneManager.Load(GameSceneManager.Scene.RaisePhaseScene);
 
     void SetupQuitButton()
     {
