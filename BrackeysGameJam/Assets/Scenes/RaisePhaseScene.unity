@@ -3911,6 +3911,7 @@ MonoBehaviour:
   closeButton: {fileID: 1181449514}
   journalPageTurnSound: {fileID: 8300000, guid: f9d4e5244924e204792e3cdfde6544e3,
     type: 3}
+  journalCloseSound: {fileID: 8300000, guid: 2eebe6502e31df947958c33cba4b137b, type: 3}
 --- !u!1 &955956627
 GameObject:
   m_ObjectHideFlags: 0
