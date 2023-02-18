@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f98f69a4b557c504486e8901a2ed4b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 16
+  moveSpeed: 24
   rotationSpeed: 900
   maxHealth: 100
   animator: {fileID: 0}
@@ -64,7 +64,7 @@ MonoBehaviour:
   detectionLayer:
     serializedVersion: 2
     m_Bits: 64
-  attackCooldownTimerMax: 3
+  attackCooldownTimerMax: 1.5
   attackRange: 7
 --- !u!114 &-6890166761903302630
 MonoBehaviour:

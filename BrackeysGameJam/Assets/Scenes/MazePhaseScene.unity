@@ -1851,6 +1851,16 @@ PrefabInstance:
       propertyPath: verticalOffset
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 70208544445911312, guid: 679938794a38a504fba867749dfb494a,
+        type: 3}
+      propertyPath: attackRange
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 70208544445911312, guid: 679938794a38a504fba867749dfb494a,
+        type: 3}
+      propertyPath: attackCooldownTimerMax
+      value: 4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 70208544821111220, guid: 679938794a38a504fba867749dfb494a,
         type: 3}
       propertyPath: radius
