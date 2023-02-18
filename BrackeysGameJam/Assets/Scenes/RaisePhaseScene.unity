@@ -4041,8 +4041,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fef140af0fce7154baaa128480b9c958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  INITIAL_MAX_HEALTH: 2
-  INITIAL_SPEED: 5
+  INITIAL_MAX_HEALTH: 20
+  INITIAL_SPEED: 30
   INITIAL_LIFESPAN: 15
   INITIAL_MAX_ACTIONS: 3
 --- !u!1 &1417502710

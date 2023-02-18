@@ -9,6 +9,12 @@ public class SoundEffects : MonoBehaviour
 
     AudioSource audioSource;
 
+    public float GetVolume() => audioSource.volume;
+    public float SetVolume() => audioSource.volume;
+
+    public void PlayClip(AudioClip clip) => audioSource.PlayOneShot(clip);
+    public void PlayClip(AudioClip clip, float volumeScale) => audioSource.PlayOneShot(clip, volumeScale);
+
     private void Awake()
     {
         if (Instance != null)
@@ -20,10 +26,5 @@ public class SoundEffects : MonoBehaviour
         DontDestroyOnLoad(this);
 
         audioSource = GetComponent<AudioSource>();
-    }
-
-    public void PlayClip(AudioClip clip)
-    {
-        audioSource.PlayOneShot(clip);
     }
 }
