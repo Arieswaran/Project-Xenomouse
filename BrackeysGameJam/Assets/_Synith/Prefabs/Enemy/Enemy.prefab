@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f98f69a4b557c504486e8901a2ed4b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8
+  moveSpeed: 16
   rotationSpeed: 900
   maxHealth: 100
   animator: {fileID: 0}
@@ -64,8 +64,8 @@ MonoBehaviour:
   detectionLayer:
     serializedVersion: 2
     m_Bits: 64
-  attackCooldownTimerMax: 5
-  attackRange: 6
+  attackCooldownTimerMax: 3
+  attackRange: 7
 --- !u!114 &-6890166761903302630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   bushLayerMask:
     serializedVersion: 2
     m_Bits: 128
-  radius: 5
+  radius: 4
 --- !u!54 &5827462798172048306
 Rigidbody:
   m_ObjectHideFlags: 0

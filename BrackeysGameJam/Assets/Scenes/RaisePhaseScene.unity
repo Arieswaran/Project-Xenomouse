@@ -4042,7 +4042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   INITIAL_MAX_HEALTH: 20
-  INITIAL_SPEED: 50
+  INITIAL_SPEED: 30
   INITIAL_LIFESPAN: 15
   INITIAL_MAX_ACTIONS: 3
 --- !u!1 &1417502710
