@@ -6876,7 +6876,7 @@ MonoBehaviour:
   mousePlayClip: {fileID: 8300000, guid: de1a3fbff5fe1c047868d87e8b1dc2ff, type: 3}
   mouseBrushClip: {fileID: 8300000, guid: 1f0e901b4d909e84385962d58fecba98, type: 3}
   journalClip: {fileID: 8300000, guid: f9d4e5244924e204792e3cdfde6544e3, type: 3}
-  bgMusicClip: {fileID: 8300000, guid: 854d986ef3043a94f83470d35b697a3d, type: 3}
+  bgMusicClip: {fileID: 8300000, guid: d4179b993cce6584a88b3b301e3201ff, type: 3}
 --- !u!1001 &1836819266
 PrefabInstance:
   m_ObjectHideFlags: 0
