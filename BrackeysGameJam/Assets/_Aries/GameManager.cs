@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
 
     public void IncreaseMouseSpeed(int percentage)
     {
-        mouseData.speed += Mathf.CeilToInt(mouseData.speed * percentage / 100f);
+        mouseData.speed += Mathf.FloorToInt(mouseData.speed * percentage / 100f);
         mouseData.OnStatsChanged?.Invoke();
     }
 
@@ -81,21 +81,21 @@ public class GameManager : MonoBehaviour
     public void IncreaseMouseLifespanByPercentageFromPreviousMouse(int percentage)
     {
         MouseData previousMouseData = previousGenerationMice[previousGenerationMice.Count - 1];
-        mouseData.lifespan += Mathf.CeilToInt(previousMouseData.lifespan * percentage / 100f);
+        mouseData.lifespan += Mathf.FloorToInt(previousMouseData.lifespan * percentage / 100f);
         mouseData.OnStatsChanged?.Invoke();
     }
 
     public void IncreaseMouseSpeedByPercentageFromPreviousMouse(int percentage)
     {
         MouseData previousMouseData = previousGenerationMice[previousGenerationMice.Count - 1];
-        mouseData.speed += Mathf.CeilToInt(previousMouseData.speed * percentage / 100f);
+        mouseData.speed += Mathf.FloorToInt(previousMouseData.speed * percentage / 100f);
         mouseData.OnStatsChanged?.Invoke();
     }
 
     public void IncreaseMouseHealthByPercentageFromPreviousMouse(int percentage)
     {
         MouseData previousMouseData = previousGenerationMice[previousGenerationMice.Count - 1];
-        mouseData.health += Mathf.CeilToInt(previousMouseData.health * percentage / 100f);
+        mouseData.health += Mathf.FloorToInt(previousMouseData.health * percentage / 100f);
         mouseData.OnStatsChanged?.Invoke();
     }
 
@@ -144,10 +144,10 @@ public class GameManager : MonoBehaviour
             }
         }
         MouseData newMouseData = new MouseData();
-        newMouseData.health = INITIAL_MAX_HEALTH + Mathf.CeilToInt(mouseData.max_health * extra_stats / 100f);
+        newMouseData.health = INITIAL_MAX_HEALTH + Mathf.FloorToInt(mouseData.max_health * extra_stats / 100f);
         newMouseData.max_health = mouseData.health;
-        newMouseData.speed = INITIAL_SPEED + Mathf.CeilToInt(mouseData.speed * extra_stats / 100f);
-        newMouseData.lifespan = INITIAL_LIFESPAN + Mathf.CeilToInt(mouseData.lifespan * extra_stats / 100f);
+        newMouseData.speed = INITIAL_SPEED + Mathf.FloorToInt(mouseData.speed * extra_stats / 100f);
+        newMouseData.lifespan = INITIAL_LIFESPAN + Mathf.FloorToInt(mouseData.lifespan * extra_stats / 100f);
         newMouseData.max_actions = INITIAL_MAX_ACTIONS;
         newMouseData.actions = mouseData.max_actions;
         newMouseData.generation_count = mouseData.generation_count;
