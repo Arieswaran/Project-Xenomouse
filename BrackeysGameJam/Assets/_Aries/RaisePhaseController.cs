@@ -16,6 +16,7 @@ public class RaisePhaseController : MonoBehaviour
     [SerializeField] private Transform mouse;
     [SerializeField] private Button logButton;
     [SerializeField] private JournalPopupController journalPopupController;
+    [SerializeField] private GameObject sendToMazeButtonGameObject;
     private float currentScale = 1f;
     private float scaleChange = 1.1f;
 
@@ -75,8 +76,7 @@ public class RaisePhaseController : MonoBehaviour
         if(GameManager.instance.CanDoActions())
             Invoke("DisableOverlay", 1.6f); // Disable overlay after 1.5 seconds
         else{
-            // Load Maze Scene
-            GameManager.instance.LoadMazeScene();
+            sendToMazeButtonGameObject.SetActive(true);
         }
     }
 
