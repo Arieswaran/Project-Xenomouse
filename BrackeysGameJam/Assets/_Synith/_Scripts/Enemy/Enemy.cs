@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class Enemy : Unit
 {
-    const float BUSH_SPEED_MODIFIER = 0.35f;
+    const float BUSH_SPEED_MODIFIER = 0.25f;
     [SerializeField] List<Transform> patrolTransformList;
     [SerializeField, Range(3f, 30f)] float detectionRadius;
     [SerializeField, Range(3f, 60f)] float chaseRadius;
