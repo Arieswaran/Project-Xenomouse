@@ -1316,6 +1316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1234850438}
   - component: {fileID: 1234850439}
+  - component: {fileID: 1234850440}
   m_Layer: 5
   m_Name: VolumeSlider
   m_TagString: Untagged
@@ -1386,17 +1387,43 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1476644872}
+  m_TargetGraphic: {fileID: 47227715}
   m_FillRect: {fileID: 316203695}
   m_HandleRect: {fileID: 1476644871}
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.498
+  m_Value: 0.562
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: dd59fe2c02634724ba24600049aeeb59, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1234850440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234850437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd59fe2c02634724ba24600049aeeb59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: cd59f40cf8d2f174cb993d04e8257edf, type: 2}
+  slider: {fileID: 1234850439}
 --- !u!1 &1393445256
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,7 +1711,7 @@ RectTransform:
   m_GameObject: {fileID: 1476644870}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6, y: 1.6, z: 1.6}
+  m_LocalScale: {x: 0.98999995, y: 0.98999995, z: 0.98999995}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2072379631}
@@ -1693,7 +1720,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
+  m_SizeDelta: {x: 40, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1476644872
 MonoBehaviour:
@@ -1871,6 +1898,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4984205007107088718, guid: 5ed41f6b08edaa34fb356acc887b2872,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984205007107088718, guid: 5ed41f6b08edaa34fb356acc887b2872,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ceff261c52ac11947b6c8fbf15c965c6, type: 3}
+    - target: {fileID: 4984205007107088718, guid: 5ed41f6b08edaa34fb356acc887b2872,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: cd59f40cf8d2f174cb993d04e8257edf,
+        type: 2}
     - target: {fileID: 5827168240854291156, guid: 5ed41f6b08edaa34fb356acc887b2872,
         type: 3}
       propertyPath: m_RootOrder
