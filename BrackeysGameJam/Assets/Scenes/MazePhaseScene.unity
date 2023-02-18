@@ -6575,7 +6575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a27eab1d7eaaa04ca7cdf547ef8b598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountOfCheeseToSpawn: 4
+  amountOfCheeseToSpawn: 5
   cheeseSpawnTransformList:
   - {fileID: 7976123019072971785}
   - {fileID: 1990501140}
