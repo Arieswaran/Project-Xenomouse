@@ -14,7 +14,7 @@ public class Player : Unit
     float buffedMoveSpeed;
     public int lifeSpan;
     bool isDead;
-    bool takeStep;
+    bool isTakingStep;
     [SerializeField] bool debugMode;
     [SerializeField] LayerMask bushLayerMask;
     [SerializeField] float collisionDistance = 1.5f;
@@ -58,7 +58,7 @@ public class Player : Unit
 
     private void MouseTakeStep()
     {
-        if (!takeStep) return;
+        if (!isTakingStep) return;
         OnTakeStep?.Invoke();
         Debug.Log("Step Sound");
         StartCoroutine(nameof(StepCooldown));
@@ -66,9 +66,9 @@ public class Player : Unit
 
     IEnumerator StepCooldown()
     {
-        takeStep = false;
+        isTakingStep = false;
         yield return new WaitForSeconds(stepLength);
-        takeStep = true;
+        isTakingStep = true;
     }
 
     IEnumerator MouseLifeFading()
@@ -108,14 +108,14 @@ public class Player : Unit
         base.Awake();
         playerInputActions = new();
         startingMoveSpeed = moveSpeed;
-        takeStep = true;
+        isTakingStep = true;
 
 
         if (!MazePhaseManager.Instance.TryApplyStatsFromLastGeneration())
         {
             // if there is no game manager use testing stats
             MouseMazeStats defaultStats = new(20, 5, 14);
-            MouseMazeStats godModeStats = new(99, 50, 999);
+            MouseMazeStats godModeStats = new(99, 500, 999);
 
             MouseMazeStats startingStats = debugMode ? godModeStats : defaultStats;
             SetStats(startingStats);
@@ -157,7 +157,7 @@ public class Player : Unit
         moveDirection += Vector3.ProjectOnPlane(Camera.main.transform.right, transform.up).normalized * input.x;
         moveDirection += Vector3.ProjectOnPlane(Camera.main.transform.forward, transform.up).normalized * input.y;
 
-        if (moveDirection != Vector3.zero & takeStep)
+        if (moveDirection != Vector3.zero & isTakingStep)
         {
             MouseTakeStep();            
         }

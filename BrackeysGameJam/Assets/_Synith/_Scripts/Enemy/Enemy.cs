@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -9,24 +10,39 @@ public class Enemy : Unit
     const float BUSH_SPEED_MODIFIER = 0.5f;
     [SerializeField] List<Transform> patrolTransformList;
     [SerializeField, Range(3f, 30f)] float detectionRadius;
+    [SerializeField, Range(3f, 60f)] float chaseRadius;
     [SerializeField] LayerMask detectionLayer;
     [SerializeField] float attackCooldownTimerMax;
 
+    bool isChasingPlayer;
+
     float attackCooldownTimer;
     float minDistance = 1f;
-    float attackRange = 3f;
+    [SerializeField] float attackRange = 6f;
 
     public bool isAttacking;
+
+
+    bool isTakingStep;
 
     Player player;
     EnemySlowInBush enemySlowInBush;
 
     float startingSpeed;
     float bushSpeed;
+    float stepLength;
+
+    bool isInBush;
+
+    public event Action OnTakeStep;
+    public event Action OnDetectMouse;
+    public event Action<bool> OnInBushChanged;
 
     Transform targetTransform;
     Transform playerTransform;
     int patrolIndex = 0;
+
+
 
     void Start()
     {
@@ -42,17 +58,29 @@ public class Enemy : Unit
 
         enemySlowInBush = GetComponent<EnemySlowInBush>();
         enemySlowInBush.OnBushStatusChanged += EnemySlowInBush_OnBushStatusChanged;
+
+        stepLength = GetComponent<EnemySounds>().walkSound.length;
     }
 
     private void EnemySlowInBush_OnBushStatusChanged(bool isInBush)
     {
         moveSpeed = isInBush ? bushSpeed : startingSpeed;
+
+        if (this.isInBush != isInBush)
+        {
+            this.isInBush = isInBush;
+            OnInBushChanged?.Invoke(isInBush);
+            
+        }
     }
 #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
         Handles.color = Color.green;
         Handles.DrawWireDisc(transform.position, transform.up, detectionRadius);
+
+        Handles.color = Color.cyan;
+        Handles.DrawWireDisc(transform.position, transform.up, chaseRadius);
     }
 #endif
 
@@ -67,8 +95,9 @@ public class Enemy : Unit
         if (distanceToPlayer < detectionRadius)
         {
             targetTransform = playerTransform;
+            isChasingPlayer = true;            
         }
-        else
+        else if (isChasingPlayer && distanceToPlayer > chaseRadius)
         {
             targetTransform = patrolTransformList[patrolIndex];
         }
@@ -88,7 +117,27 @@ public class Enemy : Unit
         }
 
         Vector3 moveDirection = (targetTransform.position - transform.position).normalized;
+
+        if (moveDirection != Vector3.zero & isTakingStep)
+        {
+            CatTakeStep();
+        }
+
         return moveDirection;
+    }
+
+    private void CatTakeStep()
+    {
+        if (!isTakingStep) return;
+        OnTakeStep?.Invoke();
+        StartCoroutine(nameof(StepCooldown));
+    }
+
+    IEnumerator StepCooldown()
+    {
+        isTakingStep = false;
+        yield return new WaitForSeconds(stepLength);
+        isTakingStep = true;
     }
 
     protected override Vector3 CalculateRotationDirection()
