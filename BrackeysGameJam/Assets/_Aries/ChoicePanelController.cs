@@ -16,21 +16,21 @@ public class ChoicePanelController : MonoBehaviour
     private void SetButtons(){
         healthButton.onClick.AddListener(delegate () {
                 AnimationHelper.pressButton(healthButton.transform,delegate(){
-                    GameManager.instance.IncreaseMouseHealthByPercentageFromPreviousMouse(20);
+                    GameManager.instance.IncreaseMouseHealthByPercentageFromPreviousMouse(30);
                     gameObject.SetActive(false);
                 });
             }
         );
         speedButton.onClick.AddListener(delegate () {
                 AnimationHelper.pressButton(speedButton.transform,delegate(){
-                    GameManager.instance.IncreaseMouseSpeedByPercentageFromPreviousMouse(10);
+                    GameManager.instance.IncreaseMouseSpeedByPercentageFromPreviousMouse(20);
                     gameObject.SetActive(false);
                 });
             }
         );
         lifespanButton.onClick.AddListener(delegate () {
                 AnimationHelper.pressButton(lifespanButton.transform,delegate(){
-                    GameManager.instance.IncreaseMouseLifespanByPercentageFromPreviousMouse(30);
+                    GameManager.instance.IncreaseMouseLifespanByPercentageFromPreviousMouse(40);
                     gameObject.SetActive(false);
                 });
             }

@@ -132,7 +132,7 @@ public class GameManager : MonoBehaviour
     public void GenerateNextGenerationMouse(){ // Include stats from previous generation or use the number of collected cheese as a factor
         previousGenerationMice.Add(mouseData);
 
-        float extra_stats = 5f;
+        float extra_stats = 30f;
         if(mouseData.brushed_count > 0){
             if(UnityEngine.Random.Range(0,100) < 40){
                 extra_stats += 2f;
