@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class StatsPanelController : MonoBehaviour
 {
@@ -15,22 +16,26 @@ public class StatsPanelController : MonoBehaviour
     {
         GameManager.instance.GetMouseData().OnStatsChanged += UpdateStats;
         MouseData mouseData = GameManager.instance.GetMouseData();
-        healthText.text = "Health: " + mouseData.health;
-        speedText.text = "Speed: " + mouseData.speed;
-        lifespanText.text = "Lifespan: " + mouseData.lifespan;
-        actionsText.text = "Actions: " + mouseData.actions;
+        healthText.text =  mouseData.health.ToString();
+        speedText.text =  mouseData.speed.ToString();
+        lifespanText.text =  mouseData.lifespan.ToString();
         hungerBar.fillAmount = 0;
     }
 
     private void UpdateStats()
     {
         MouseData mouseData = GameManager.instance.GetMouseData();
-        
-        healthText.text = "Health: " + mouseData.health;
-        speedText.text = "Speed: " + mouseData.speed;
-        lifespanText.text = "Lifespan: " + mouseData.lifespan;
-        actionsText.text = "Actions: " + mouseData.actions;
-        hungerBar.fillAmount = ((float)(mouseData.max_actions - mouseData.actions))/ (float)mouseData.max_actions;
+        AnimationHelper.DoNumberAnimation(healthText,int.Parse(healthText.text), mouseData.health, 0.5f);
+        AnimationHelper.DoNumberAnimation(speedText, int.Parse(speedText.text), mouseData.speed, 0.5f);
+        AnimationHelper.DoNumberAnimation(lifespanText, int.Parse(lifespanText.text), mouseData.lifespan, 0.5f);
+        //AnimationHelper.DoNumberAnimation(actionsText, int.Parse(actionsText.text), mouseData.actions, 0.5f);
+        float currentFillAmount = ((float)(mouseData.max_actions - mouseData.actions))/ (float)mouseData.max_actions;
+        AnimateProgressBar(currentFillAmount);
+    }
+
+    private void AnimateProgressBar(float currentFillAmount)
+    {
+        hungerBar.DOFillAmount(currentFillAmount, 0.5f);
     }
 
     private void OnDestroy()

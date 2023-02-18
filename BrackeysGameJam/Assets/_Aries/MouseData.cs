@@ -20,7 +20,7 @@ public class MouseData
 
 [Serializable]
 public class PlayerData{
-    public int red_cheese_count ;
-    public int blue_cheese_count ;
-    public int green_cheese_count ;
+    public int red_cheese_count;
+    public int blue_cheese_count;
+    public int green_cheese_count;
 }
