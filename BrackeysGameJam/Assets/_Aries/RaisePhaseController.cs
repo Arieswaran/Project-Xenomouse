@@ -73,9 +73,8 @@ public class RaisePhaseController : MonoBehaviour
 
     private void DoCommonThingsAfterAction(float delay = 1.6f){ 
         overlay.SetActive(true); // To prevent multiple animation triggers from overlapping
-        if(GameManager.instance.CanDoActions())
-            Invoke("DisableOverlay", 1.6f); // Disable overlay after 1.5 seconds
-        else{
+        Invoke("DisableOverlay", 1.6f); // Disable overlay after 1.5 seconds
+        if(!GameManager.instance.CanDoActions()){
             sendToMazeButtonGameObject.SetActive(true);
         }
     }

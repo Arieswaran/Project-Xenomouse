@@ -6,7 +6,7 @@ using DG.Tweening;
 
 public class ActionPanelController : MonoBehaviour
 {
-    [SerializeField] private Button FeedButton, BrushButton, PlayButton, FeedCheeseButton , FeedPelletButton , SendToMazeButton , ViewJournalButton , RedCheeseButton, BlueCheeseButton, GreenCheeseButton,sendToMazeButton;
+    [SerializeField] private Button FeedButton, BrushButton, PlayButton, FeedCheeseButton , FeedPelletButton , RedCheeseButton, BlueCheeseButton, GreenCheeseButton,sendToMazeButton;
 
     [SerializeField] private List<GameObject> feedOptions, normalOptions;
     [SerializeField] private GameObject all_buttons_parent, cheese_buttons_parent;

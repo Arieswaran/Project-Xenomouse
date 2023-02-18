@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StatsPanelController : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class StatsPanelController : MonoBehaviour
     public TMPro.TextMeshProUGUI speedText;
     public TMPro.TextMeshProUGUI lifespanText;
     public TMPro.TextMeshProUGUI actionsText;
+    [SerializeField] private Image hungerBar;
 
     private void Start()
     {
@@ -17,6 +19,7 @@ public class StatsPanelController : MonoBehaviour
         speedText.text = "Speed: " + mouseData.speed;
         lifespanText.text = "Lifespan: " + mouseData.lifespan;
         actionsText.text = "Actions: " + mouseData.actions;
+        hungerBar.fillAmount = 0;
     }
 
     private void UpdateStats()
@@ -27,6 +30,7 @@ public class StatsPanelController : MonoBehaviour
         speedText.text = "Speed: " + mouseData.speed;
         lifespanText.text = "Lifespan: " + mouseData.lifespan;
         actionsText.text = "Actions: " + mouseData.actions;
+        hungerBar.fillAmount = ((float)(mouseData.max_actions - mouseData.actions))/ (float)mouseData.max_actions;
     }
 
     private void OnDestroy()
