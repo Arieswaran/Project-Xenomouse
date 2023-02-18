@@ -17,6 +17,7 @@ public class RaisePhaseController : MonoBehaviour
     [SerializeField] private Button logButton;
     [SerializeField] private JournalPopupController journalPopupController;
     [SerializeField] private GameObject sendToMazeButtonGameObject;
+    [SerializeField] private Button feedButton;
     private float currentScale = 1f;
     private float scaleChange = 1.1f;
 
@@ -76,6 +77,7 @@ public class RaisePhaseController : MonoBehaviour
         Invoke("DisableOverlay", 1.6f); // Disable overlay after 1.5 seconds
         if(!GameManager.instance.CanDoActions()){
             sendToMazeButtonGameObject.SetActive(true);
+            feedButton.interactable = false;
         }
     }
 
