@@ -14,18 +14,28 @@ public class Player : Unit
     float buffedMoveSpeed;
     public int lifeSpan;
     bool isDead;
+    bool isTakingStep;
     [SerializeField] bool debugMode;
     [SerializeField] LayerMask bushLayerMask;
     [SerializeField] float collisionDistance = 1.5f;
 
     public static event Action OnMouseDeath;
+    public event Action OnMouseDeathFromCat;
+    public event Action OnMouseDeathFromTimer;
+    public event Action OnTimerAlmostFinished;
+    public event Action OnTakeDamage;
+    public event Action OnWin;
+    public event Action OnEat;
+    public event Action OnTakeStep;
     public event Action<int> OnHealthAmountChanged;
     public event Action<int> OnLifespanChanged;
+
+    public float stepLength;
 
     void OnDrawGizmos()
     {
         Gizmos.color = Color.magenta;
-        Gizmos.DrawLine(transform.position + Vector3.up, transform.position + transform.forward * collisionDistance);
+        Gizmos.DrawLine(transform.position + Vector3.up, transform.position + Vector3.up + transform.forward * collisionDistance);
     }
 
     public int GetLifeSpan() => lifeSpan;
@@ -46,6 +56,21 @@ public class Player : Unit
         lifeSpan = mouseStats.LifeSpan;
     }
 
+    private void MouseTakeStep()
+    {
+        if (!isTakingStep) return;
+        OnTakeStep?.Invoke();
+        Debug.Log("Step Sound");
+        StartCoroutine(nameof(StepCooldown));
+    }
+
+    IEnumerator StepCooldown()
+    {
+        isTakingStep = false;
+        yield return new WaitForSeconds(stepLength);
+        isTakingStep = true;
+    }
+
     IEnumerator MouseLifeFading()
     {
         while (!isDead)
@@ -55,9 +80,15 @@ public class Player : Unit
             lifeSpan--;
             OnLifespanChanged?.Invoke(lifeSpan);
 
+            if (lifeSpan == 5)
+            {
+                OnTimerAlmostFinished?.Invoke();
+            }
+
             if (lifeSpan <= 0)
             {
                 lifeSpan = 0;
+                OnMouseDeathFromTimer?.Invoke();
                 Die();
             }
         }
@@ -77,17 +108,21 @@ public class Player : Unit
         base.Awake();
         playerInputActions = new();
         startingMoveSpeed = moveSpeed;
+        isTakingStep = true;
 
 
         if (!MazePhaseManager.Instance.TryApplyStatsFromLastGeneration())
         {
             // if there is no game manager use testing stats
             MouseMazeStats defaultStats = new(20, 5, 14);
-            MouseMazeStats godModeStats = new(99, 50, 999);
+            MouseMazeStats godModeStats = new(99, 500, 999);
 
             MouseMazeStats startingStats = debugMode ? godModeStats : defaultStats;
             SetStats(startingStats);
         }
+
+        stepLength = GetComponent<PlayerSounds>().walkSound.length;
+        Debug.Log($"stepLength = {stepLength}");
     }
 
     void OnEnable()
@@ -102,7 +137,6 @@ public class Player : Unit
 
     protected override Vector3 CalculateMoveDirection()
     {
-
         if (isDead) return Vector3.zero;
 
         InputAction moveAction = playerInputActions.Player.Move;
@@ -122,6 +156,11 @@ public class Player : Unit
 
         moveDirection += Vector3.ProjectOnPlane(Camera.main.transform.right, transform.up).normalized * input.x;
         moveDirection += Vector3.ProjectOnPlane(Camera.main.transform.forward, transform.up).normalized * input.y;
+
+        if (moveDirection != Vector3.zero & isTakingStep)
+        {
+            MouseTakeStep();            
+        }
 
         return moveDirection;
     }
@@ -143,10 +182,12 @@ public class Player : Unit
     {
         if (other.TryGetComponent(out Cheese cheese))
         {
+            OnEat?.Invoke();
             EatCheese(cheese);
         }
         if (other.TryGetComponent(out ExitZone exitZone))
         {
+            OnWin?.Invoke();
             exitZone.WinGame();
         }
     }
@@ -162,21 +203,20 @@ public class Player : Unit
     {
         if (isDead) return;
 
-        mouseStats.Health -= 10;       
-
-
-        Debug.Log("Health Remaining:" + mouseStats.Health);
+        mouseStats.Health -= 10;
 
         if (mouseStats.Health <= 0)
         {
             mouseStats.Health = 0;
+            OnMouseDeathFromCat?.Invoke();
             Die();
         }
         else
         {
-            Debug.Log("Ouch!");
+            OnTakeDamage?.Invoke();
             animator.SetTrigger("Hurt");
         }
+
         OnHealthAmountChanged?.Invoke(mouseStats.Health);
     }
 }

@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2177975497487817593}
+  - component: {fileID: 2177975497487817588}
+  - component: {fileID: 8330030819728324252}
   - component: {fileID: 2177975497487817590}
   - component: {fileID: 2177975497487817591}
-  - component: {fileID: 2177975497487817588}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -35,6 +36,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &2177975497487817588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2177975497487817592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0597d2ef007fa644983a00fc903eeaea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0.4
+  rotationSpeed: 900
+  maxHealth: 100
+  animator: {fileID: 5715961302799934824}
+  lifeSpan: 0
+  debugMode: 0
+  bushLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
+  collisionDistance: 2
+--- !u!114 &8330030819728324252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2177975497487817592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993d2d39656a3ed4a970ee72c58ef279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSound: {fileID: 8300000, guid: 72a7708924a919645af41f1271233ea8, type: 3}
+  eatSound: {fileID: 8300000, guid: 2dc90bdef0a6b70419ace926a9a3e219, type: 3}
+  takeDamageSound: {fileID: 8300000, guid: 736da58c2a21fc84197ea0d7d984e6f3, type: 3}
+  deathCatSound: {fileID: 8300000, guid: b528099ddf030ce42afb77337a23a84f, type: 3}
+  deathTimerSound: {fileID: 8300000, guid: eadbc6a3d2b2f204988bd8bca8ebd9a2, type: 3}
+  fiveSecondsSound: {fileID: 8300000, guid: e889404077be1364685df1f0142476d5, type: 3}
+  happyWinSound: {fileID: 8300000, guid: 1d7326a8c0115ab448991c7d84e33785, type: 3}
 --- !u!135 &2177975497487817590
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -61,25 +103,9 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 2
+  m_Interpolate: 1
   m_Constraints: 116
-  m_CollisionDetection: 3
---- !u!114 &2177975497487817588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2177975497487817592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0597d2ef007fa644983a00fc903eeaea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 4
-  rotationSpeed: 900
-  maxHealth: 100
-  animator: {fileID: 5715961302799934824}
+  m_CollisionDetection: 2
 --- !u!1001 &2177975496669944057
 PrefabInstance:
   m_ObjectHideFlags: 0
