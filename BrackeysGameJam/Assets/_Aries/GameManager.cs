@@ -135,12 +135,12 @@ public class GameManager : MonoBehaviour
         float extra_stats = 5f;
         if(mouseData.brushed_count > 0){
             if(UnityEngine.Random.Range(0,100) < 40){
-                extra_stats += 2f;
+                extra_stats += 6f;
             }
         }
         if(mouseData.played_count > 0){
             if(UnityEngine.Random.Range(0,100) < 60){
-                extra_stats += 1f;
+                extra_stats += 4f;
             }
         }
         MouseData newMouseData = new MouseData();
