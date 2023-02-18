@@ -18,6 +18,7 @@ public class RaisePhaseController : MonoBehaviour
     [SerializeField] private JournalPopupController journalPopupController;
     [SerializeField] private GameObject sendToMazeButtonGameObject;
     [SerializeField] private Button feedButton;
+    [SerializeField] private AudioClip mouseReviveClip, mouseEatClip, mousePlayClip, mouseBrushClip , journalClip, bgMusicClip;
     private float currentScale = 1f;
     private float scaleChange = 1.1f;
 
@@ -38,6 +39,11 @@ public class RaisePhaseController : MonoBehaviour
         }
         currentScale = mouse.localScale.x;
         SetButtons();
+        SoundEffects.Instance.PlayClip(bgMusicClip);
+    }
+
+    private void OnDestroy() {
+        SoundEffects.Instance.StopClip();
     }
 
     private void SetButtons(){
@@ -50,18 +56,21 @@ public class RaisePhaseController : MonoBehaviour
     // Animation states "Playing" "Brushing" "Eating"
     public void TriggerPlaying(){
         _mouseAnimator.SetTrigger("Playing");
+        SoundEffects.Instance.PlayClip(mousePlayClip);
         GameManager.instance.IncreasePlayedCount();
         DoCommonThingsAfterAction();
     }
 
     public void TriggerBrushing(){
         _mouseAnimator.SetTrigger("Brushing");
+        SoundEffects.Instance.PlayClip(mouseBrushClip);
         GameManager.instance.IncreaseBrushedCount();
         DoCommonThingsAfterAction();
     }
 
     public void TriggerEating(){
         _mouseAnimator.SetTrigger("Eating");
+        SoundEffects.Instance.PlayClip(mouseEatClip);
         GameManager.instance.DecreaseActions();
         Invoke(nameof(IncreaseMouseScale), 1.5f);
         DoCommonThingsAfterAction(2.1f);
@@ -69,6 +78,7 @@ public class RaisePhaseController : MonoBehaviour
 
     public void TriggerRevive(){
         _mouseAnimator.SetTrigger("Revive");
+        SoundEffects.Instance.PlayClip(mouseReviveClip);
         DoCommonThingsAfterAction();
     }
 

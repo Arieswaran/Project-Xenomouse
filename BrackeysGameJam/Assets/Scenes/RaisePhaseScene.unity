@@ -540,7 +540,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PLAY
+  m_text: DANCE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 48bfda79fefa81645bbf6da982098e67, type: 2}
   m_sharedMaterial: {fileID: 1098962331571693925, guid: 48bfda79fefa81645bbf6da982098e67,
@@ -3909,6 +3909,8 @@ MonoBehaviour:
   journalText: {fileID: 949008167}
   journalTitle: {fileID: 343467025}
   closeButton: {fileID: 1181449514}
+  journalPageTurnSound: {fileID: 8300000, guid: f9d4e5244924e204792e3cdfde6544e3,
+    type: 3}
 --- !u!1 &955956627
 GameObject:
   m_ObjectHideFlags: 0
@@ -4635,6 +4637,75 @@ MonoBehaviour:
   INITIAL_SPEED: 30
   INITIAL_LIFESPAN: 15
   INITIAL_MAX_ACTIONS: 3
+--- !u!1001 &1342996889
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5827168240854291156, guid: 5ed41f6b08edaa34fb356acc887b2872,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827168240854291156, guid: 5ed41f6b08edaa34fb356acc887b2872,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827168240854291156, guid: 5ed41f6b08edaa34fb356acc887b2872,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827168240854291156, guid: 5ed41f6b08edaa34fb356acc887b2872,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827168240854291156, guid: 5ed41f6b08edaa34fb356acc887b2872,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827168240854291156, guid: 5ed41f6b08edaa34fb356acc887b2872,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827168240854291156, guid: 5ed41f6b08edaa34fb356acc887b2872,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827168240854291156, guid: 5ed41f6b08edaa34fb356acc887b2872,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827168240854291156, guid: 5ed41f6b08edaa34fb356acc887b2872,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827168240854291156, guid: 5ed41f6b08edaa34fb356acc887b2872,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827168240854291156, guid: 5ed41f6b08edaa34fb356acc887b2872,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827168240854291162, guid: 5ed41f6b08edaa34fb356acc887b2872,
+        type: 3}
+      propertyPath: m_Name
+      value: SoundEffects
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5ed41f6b08edaa34fb356acc887b2872, type: 3}
 --- !u!1 &1362770694
 GameObject:
   m_ObjectHideFlags: 0
@@ -6523,7 +6594,13 @@ MonoBehaviour:
   logButton: {fileID: 1270305714}
   journalPopupController: {fileID: 955635205}
   sendToMazeButtonGameObject: {fileID: 128889062}
-  feedButton: {fileID: 0}
+  feedButton: {fileID: 1513086042}
+  mouseReviveClip: {fileID: 8300000, guid: dcdbc6c0596f89c4e99fcbf1f6eda8a9, type: 3}
+  mouseEatClip: {fileID: 8300000, guid: 4a2f0886de7a7e8449d412d03a27e9ac, type: 3}
+  mousePlayClip: {fileID: 8300000, guid: de1a3fbff5fe1c047868d87e8b1dc2ff, type: 3}
+  mouseBrushClip: {fileID: 8300000, guid: 1f0e901b4d909e84385962d58fecba98, type: 3}
+  journalClip: {fileID: 8300000, guid: f9d4e5244924e204792e3cdfde6544e3, type: 3}
+  bgMusicClip: {fileID: 8300000, guid: 854d986ef3043a94f83470d35b697a3d, type: 3}
 --- !u!1001 &1836819266
 PrefabInstance:
   m_ObjectHideFlags: 0
