@@ -60,7 +60,6 @@ public class Enemy : Unit
         enemySlowInBush.OnBushStatusChanged += EnemySlowInBush_OnBushStatusChanged;
 
         stepLength = GetComponent<EnemySounds>().walkSound.length;
-        Debug.Log($"stepLength = {stepLength}");
     }
 
     private void EnemySlowInBush_OnBushStatusChanged(bool isInBush)
@@ -148,7 +147,6 @@ public class Enemy : Unit
 
     IEnumerator StepCooldown()
     {
-        print("enemyStep");
         isTakingStep = true;
         yield return new WaitForSeconds(stepLength);
         isTakingStep = false;

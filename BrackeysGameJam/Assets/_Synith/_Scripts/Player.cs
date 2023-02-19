@@ -30,6 +30,8 @@ public class Player : Unit
     public event Action<int> OnHealthAmountChanged;
     public event Action<int> OnLifespanChanged;
 
+    bool isStunned;
+
     public float stepLength;
 
     void OnDrawGizmos()
@@ -71,6 +73,12 @@ public class Player : Unit
         isTakingStep = false;
         yield return new WaitForSeconds(stepLength);
         isTakingStep = true;
+    }
+    IEnumerator StunCooldown()
+    {
+        isStunned = true;
+        yield return new WaitForSeconds(0.75f);
+        isStunned = false;
     }
 
     IEnumerator MouseLifeFading()
@@ -140,6 +148,8 @@ public class Player : Unit
     protected override Vector3 CalculateMoveDirection()
     {
         if (isDead) return Vector3.zero;
+        if (isStunned) return Vector3.zero;
+
 
         InputAction moveAction = playerInputActions.Player.Move;
         Vector2 input = moveAction.ReadValue<Vector2>();
@@ -206,6 +216,8 @@ public class Player : Unit
         if (isDead) return;
 
         mouseStats.Health -= 10;
+
+        StartCoroutine(nameof(StunCooldown));
 
         if (mouseStats.Health <= 0)
         {
