@@ -64,7 +64,6 @@ public class Player : Unit
     {
         if (!isTakingStep) return;
         OnTakeStep?.Invoke();
-        Debug.Log("Step Sound");
         StartCoroutine(nameof(StepCooldown));
     }
 
