@@ -11,6 +11,6 @@ public class RoundCounterUI : MonoBehaviour
     {
         if (GameManager.instance == null) return;
         int generationCount = GameManager.instance.GetMouseData().generation_count;
-        roundText.text = $"#{generationCount}";
+        roundText.text = $"TEST #{generationCount + 1}";
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class VolumeSliderUI : MonoBehaviour
 {
     /// <summary>
-    /// from https://github.com/Arieswaran/Brackeys-GameJam-2023-1/blob/Batty%27s-Branch/BrackeysGameJam/Assets/VolumeSlider.cs
+    /// from Batty's script at https://github.com/Arieswaran/Brackeys-GameJam-2023-1/blob/Batty%27s-Branch/BrackeysGameJam/Assets/VolumeSlider.cs
     /// </summary>
     [SerializeField] AudioMixer mixer;
     Slider slider;
