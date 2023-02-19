@@ -1749,7 +1749,7 @@ MonoBehaviour:
   healthButton: {fileID: 1898781218}
   speedButton: {fileID: 471200318}
   lifespanButton: {fileID: 750779657}
-  mouse: {fileID: 748037735}
+  mouse: {fileID: 919132147635625491}
 --- !u!114 &377507936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2310,14 +2310,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: AlienMouse2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 363849e4b290d174db1790081da3e7a8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 363849e4b290d174db1790081da3e7a8, type: 3}
---- !u!1 &542016018 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 363849e4b290d174db1790081da3e7a8,
-    type: 3}
-  m_PrefabInstance: {fileID: 542016017}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &542016019
 Animator:
   serializedVersion: 5
@@ -2325,7 +2324,7 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 542016018}
+  m_GameObject: {fileID: 919132148622147392}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 39a47da6673eee44e9d0cd04c2fee895, type: 3}
   m_Controller: {fileID: 9100000, guid: 1656e6f0867963e409c6733b97a2cf84, type: 2}
@@ -3204,12 +3203,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714626586}
   m_CullTransparentMesh: 1
---- !u!1 &748037735 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 39a47da6673eee44e9d0cd04c2fee895,
-    type: 3}
-  m_PrefabInstance: {fileID: 1836819266}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &750779655
 GameObject:
   m_ObjectHideFlags: 0
@@ -7089,10 +7082,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7fbe6b401bff3e42955b66804075935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mouseAnimator: {fileID: 542016019}
+  _mouseAnimator: {fileID: 5866666020214349523}
   overlay: {fileID: 770032107}
   choicePanelController: {fileID: 377507935}
-  mouse: {fileID: 1836819268}
+  mouse: {fileID: 543450651905410217}
   logButton: {fileID: 1270305714}
   journalPopupController: {fileID: 955635205}
   sendToMazeButtonGameObject: {fileID: 128889062}
@@ -7173,7 +7166,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 39a47da6673eee44e9d0cd04c2fee895,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 39a47da6673eee44e9d0cd04c2fee895,
         type: 3}
@@ -7182,12 +7175,6 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 1656e6f0867963e409c6733b97a2cf84, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39a47da6673eee44e9d0cd04c2fee895, type: 3}
---- !u!4 &1836819268 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 39a47da6673eee44e9d0cd04c2fee895,
-    type: 3}
-  m_PrefabInstance: {fileID: 1836819266}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1852200863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8101,3 +8088,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2147157050}
   m_CullTransparentMesh: 1
+--- !u!4 &543450651905410217 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 39a47da6673eee44e9d0cd04c2fee895,
+    type: 3}
+  m_PrefabInstance: {fileID: 1836819266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &919132147635625491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 39a47da6673eee44e9d0cd04c2fee895,
+    type: 3}
+  m_PrefabInstance: {fileID: 1836819266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &919132148622147392 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 363849e4b290d174db1790081da3e7a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 542016017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5866666020214349523 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 39a47da6673eee44e9d0cd04c2fee895,
+    type: 3}
+  m_PrefabInstance: {fileID: 1836819266}
+  m_PrefabAsset: {fileID: 0}

@@ -15622,6 +15622,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1367072272047293619, guid: 9e09558cb42f13646bc0decf7ad8adf6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1367072272565233064, guid: 9e09558cb42f13646bc0decf7ad8adf6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2177975497487817588, guid: 9e09558cb42f13646bc0decf7ad8adf6,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2177975495948713951}
     - target: {fileID: 2177975497487817588, guid: 9e09558cb42f13646bc0decf7ad8adf6,
         type: 3}
       propertyPath: debugMode
@@ -15695,6 +15710,12 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1818835135, guid: 9e09558cb42f13646bc0decf7ad8adf6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9e09558cb42f13646bc0decf7ad8adf6, type: 3}
+--- !u!95 &2177975495948713951 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5715961302799934824, guid: 9e09558cb42f13646bc0decf7ad8adf6,
+    type: 3}
+  m_PrefabInstance: {fileID: 2177975495948713950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4813504873249665768
 PrefabInstance:
   m_ObjectHideFlags: 0
