@@ -1238,6 +1238,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1234850438}
+  - component: {fileID: 1234850440}
   - component: {fileID: 1234850439}
   m_Layer: 5
   m_Name: VolumeSlider
@@ -1314,13 +1315,26 @@ MonoBehaviour:
   m_FillRect: {fileID: 316203695}
   m_HandleRect: {fileID: 1476644871}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.498
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1234850440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234850437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 052516f3cff944741a0b2233d072704c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: b6c76074069ae0f49a450f1a30c79173, type: 2}
 --- !u!1 &1332962359
 GameObject:
   m_ObjectHideFlags: 0

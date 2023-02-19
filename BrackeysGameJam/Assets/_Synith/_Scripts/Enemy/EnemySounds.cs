@@ -8,13 +8,15 @@ public class EnemySounds : MonoBehaviour
     public AudioClip
     walkSound,
     bushSound,
-    detectSound;
+    detectSound,
+    growlSound;
 
     AudioSource catAudio;
     Enemy enemy;
 
 
     void PlaySound(AudioClip clip) => catAudio.PlayOneShot(clip);
+    void PlaySound(AudioClip clip, float volumeScale) => catAudio.PlayOneShot(clip, volumeScale);
 
     void Awake()
     {
@@ -27,8 +29,14 @@ public class EnemySounds : MonoBehaviour
         enemy.OnDetectMouse += Enemy_OnDetectMouse;
         enemy.OnInBushChanged += Enemy_OnInBushChanged;
         enemy.OnTakeStep += Enemy_OnTakeStep;
+        enemy.OnStopChase += Enemy_OnStopChase;
 
         SetVolume();
+    }
+
+    private void Enemy_OnStopChase()
+    {
+        PlaySound(growlSound);
     }
 
     void SetVolume()
@@ -45,7 +53,7 @@ public class EnemySounds : MonoBehaviour
     private void Enemy_OnInBushChanged(bool isInBush)
     {
         if (isInBush)
-            PlaySound(bushSound);
+            PlaySound(bushSound, 0.5f);
     }
 
     private void Enemy_OnDetectMouse()
@@ -58,5 +66,6 @@ public class EnemySounds : MonoBehaviour
         enemy.OnDetectMouse -= Enemy_OnDetectMouse;
         enemy.OnInBushChanged -= Enemy_OnInBushChanged;
         enemy.OnTakeStep -= Enemy_OnTakeStep;
+        enemy.OnStopChase -= Enemy_OnStopChase;
     }
 }

@@ -39,11 +39,6 @@ public class RaisePhaseController : MonoBehaviour
         }
         currentScale = mouse.localScale.x;
         SetButtons();
-        SoundEffects.Instance.PlayClip(bgMusicClip);
-    }
-
-    private void OnDestroy() {
-        SoundEffects.Instance.StopClip();
     }
 
     private void SetButtons(){

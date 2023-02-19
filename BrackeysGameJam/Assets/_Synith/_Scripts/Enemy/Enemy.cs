@@ -31,10 +31,11 @@ public class Enemy : Unit
     float stepLength;
 
     public bool isInBush;
-    bool hasGrowled;
+    bool hasDetectedMouse;
 
     public event Action OnTakeStep;
     public event Action OnDetectMouse;
+    public event Action OnStopChase;
     public event Action<bool> OnInBushChanged;
     public event Action OnCatAttackStart;
 
@@ -99,19 +100,20 @@ public class Enemy : Unit
             targetTransform = playerTransform;
             isChasingPlayer = true;
 
-            if (!hasGrowled)
+            if (!hasDetectedMouse)
             {
-                // growl
+                // detect
                 OnDetectMouse?.Invoke();
-                hasGrowled = true;
+                hasDetectedMouse = true;
             }
 
         }
         else if (isChasingPlayer && distanceToPlayer > chaseRadius)
         {
             // Stop Chasing
+            OnStopChase?.Invoke();
             targetTransform = patrolTransformList[patrolIndex];
-            hasGrowled = false;
+            hasDetectedMouse = false;
         }
 
         if (distanceToPlayer < attackRange)
