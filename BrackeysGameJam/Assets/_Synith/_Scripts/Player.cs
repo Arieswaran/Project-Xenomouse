@@ -124,7 +124,7 @@ public class Player : Unit
         }
 
         stepLength = GetComponent<PlayerSounds>().walkSound.length;
-        Debug.Log($"stepLength = {stepLength}");
+
     }
 
     void OnEnable()

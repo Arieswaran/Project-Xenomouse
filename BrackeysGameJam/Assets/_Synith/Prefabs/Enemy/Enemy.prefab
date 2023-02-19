@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5827462798172048269}
   - component: {fileID: 5827462798172048268}
+  - component: {fileID: 7303282344134688174}
   - component: {fileID: -6890166761903302630}
   - component: {fileID: 2429251420486600391}
   - component: {fileID: 5827462798172048306}
@@ -64,8 +65,26 @@ MonoBehaviour:
   detectionLayer:
     serializedVersion: 2
     m_Bits: 64
-  attackCooldownTimerMax: 1.5
+  attackCooldownTimerMax: 4.5
   attackRange: 7
+  isInBush: 0
+--- !u!114 &7303282344134688174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5827462798172048304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f2f4e0839bb7a458f5482f23268c78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokeVFXTransform: {fileID: 4387277957082702398, guid: 16b027f8491724140aaf39a66f1d34b6,
+    type: 3}
+  bushVFXTransform: {fileID: 5516880222969921114, guid: 679c0987e313b1542a4c9244ed91b396,
+    type: 3}
+  smokeVFXDelay: 0.75
 --- !u!114 &-6890166761903302630
 MonoBehaviour:
   m_ObjectHideFlags: 0

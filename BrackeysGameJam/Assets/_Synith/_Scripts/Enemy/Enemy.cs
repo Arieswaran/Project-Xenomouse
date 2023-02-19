@@ -30,12 +30,13 @@ public class Enemy : Unit
     float bushSpeed;
     float stepLength;
 
-    bool isInBush;
+    public bool isInBush;
     bool hasGrowled;
 
     public event Action OnTakeStep;
     public event Action OnDetectMouse;
     public event Action<bool> OnInBushChanged;
+    public event Action OnCatAttackStart;
 
     Transform targetTransform;
     Transform playerTransform;
@@ -59,6 +60,7 @@ public class Enemy : Unit
         enemySlowInBush.OnBushStatusChanged += EnemySlowInBush_OnBushStatusChanged;
 
         stepLength = GetComponent<EnemySounds>().walkSound.length;
+        Debug.Log($"stepLength = {stepLength}");
     }
 
     private void EnemySlowInBush_OnBushStatusChanged(bool isInBush)
@@ -116,7 +118,6 @@ public class Enemy : Unit
         if (distanceToPlayer < attackRange)
         {
             // attack player
-            Debug.Log("Attacking Player!");
             Attack();
             return Vector3.zero;
         }
@@ -131,7 +132,7 @@ public class Enemy : Unit
 
         Vector3 moveDirection = (targetTransform.position - transform.position).normalized;
 
-        if (moveDirection != Vector3.zero & isTakingStep)
+        if (moveDirection != Vector3.zero & !isTakingStep)
         {
             CatTakeStep();
         }
@@ -139,19 +140,18 @@ public class Enemy : Unit
         return moveDirection;
     }
 
-
     private void CatTakeStep()
     {
-        if (!isTakingStep) return;
         OnTakeStep?.Invoke();
         StartCoroutine(nameof(StepCooldown));
     }
 
     IEnumerator StepCooldown()
     {
-        isTakingStep = false;
-        yield return new WaitForSeconds(stepLength);
+        print("enemyStep");
         isTakingStep = true;
+        yield return new WaitForSeconds(stepLength);
+        isTakingStep = false;
     }
 
     protected override Vector3 CalculateRotationDirection()
@@ -173,6 +173,7 @@ public class Enemy : Unit
 
         animator.SetTrigger("Bite");
         player.TakeDamage();
+        OnCatAttackStart?.Invoke();
 
         // TODO: Play Attack Particle Effect
         targetTransform = patrolTransformList[patrolIndex];
