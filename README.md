@@ -1,20 +1,16 @@
-#Project: Xenomouse
-In Project: Xenomouse, a scientist seeks to save the world with the perfect mutant mouse. 
+# Project: Xenomouse
 
+Welcome to Project: Xenomouse, the game where you get to play scientist and raise the perfect mutant mouse to save the world!
 
+First, you'll need to RAISE your xenomouse and make sure it reaches its full potential. Don't forget to feed it, brush it, and play with it – because even mutant mice need some TLC.
+<img src = "https://img.itch.zone/aW1hZ2UvMTkyOTQyOS8xMTM2MjQ0Mi5naWY=/original/4SJWfP.gif" width = "100%"/>
 
-RAISE the xenomouse so it grows into its body’s full potential.
+Then comes the fun part – testing your xenomouse's abilities by RUNNING it through a maze. Watch out for the catamanders (whatever those are), collect some cheese along the way, and try not to let your xenomouse die. But if it does, no worries – just use its carcass to improve your next xenomouse. It's like recycling, but for mutant mice!
+<img src="https://img.itch.zone/aW1hZ2UvMTkyOTQyOS8xMTM2MjE0OC5naWY=/original/9lW6i3.gif" width="100%"/>
 
-Feed the xenomouse
-Brush the xenomouse
-Play with the xenomouse
-RUN the xenomouse through a maze to complete a field test.
+<img src="https://img.itch.zone/aW1hZ2UvMTkyOTQyOS8xMTM2MjQ5MS5qcGc=/original/F8fH4g.jpg" width="100%">
 
-Reach the end of the maze
-Avoid catamanders
-Collect cheese
-REVIVE the xenomouse when it dies in the test, inevitably revealing its failings and weakness. Use its carcass to improve your next xenomouse.
+Once your xenomouse successfully completes the maze, you'll have undeniable scientific evidence of its potential to save the world. Don't question how, just trust us.
+<img src="https://img.itch.zone/aW1hZ2UvMTkyOTQyOS8xMTM2MjE1MS5naWY=/original/yDB982.gif" width = "100%">
 
-
-
-Once the xenomouse makes it to the end of the maze, you have scientific evidence of its capability to save the world! (Don’t ask dumb questions like “how?”) Enjoy toying with the sanctity of life!
+So come on, let's have some fun and toy with the sanctity of life! Who said science can't be hilarious?
